@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Frontend
+Backend
+Computacao
+Comunicacao
+Colaboracao

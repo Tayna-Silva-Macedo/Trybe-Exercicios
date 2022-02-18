@@ -1,0 +1,200 @@
+  168  ls
+  169  clear
+  170  ls
+  171  mv trybe_backup.txt cd ..
+  172  clear
+  173  ls
+  174  cd Trybe-Exercícios/
+  175  ls
+  176  cd Fundamentos/
+  177  ls
+  178  cd Bloco01-Unix\&Bash/
+  179  ls
+  180  cd Dia03-Unix\&Bash_Parte1/
+  181  ls
+  182  mkdir unix_tests
+  183  ls
+  184  cd unix_tests/
+  185  ls
+  186  clear
+  187  touch trybe.txt
+  188  ls
+  189  cp trybe.txt trybe_backup.txt
+  190  ls
+  191  mv trybe.txt tayna.txt
+  192  ls
+  193  mkdir backup
+  194  ls
+  195  mv trybe_backup.txt backup
+  196  ls
+  197  mkdir backup2
+  198  ls
+  199  clear
+  200  ls
+  201  cd backup
+  202  ls
+  203  mv trybe_backup.txt /home/tayna/Trybe-Exercícios/Fundamentos/Bloco01-Unix\&Bash/Dia03-Unix\&Bash_Parte1/unix_tests/backup2
+  204  ls
+  205  clear
+  206  ls
+  207  cd ..
+  208  ls
+  209  rm backup
+  210  rmdir backup
+  211  ls
+  212  mv backup2 backup
+  213  swd
+  214  pwd
+  215  clear
+  216  ls
+  217  rmdir backup
+  218  rm -rf backup
+  219  ls
+  220  clear
+  221  touch skills.txt
+  222  ls
+  223  cat >
+  224  cat > skills.txt
+  225  ls
+  226  cat skills.txt
+  227  clear
+  228  head -5 skills.txt
+  229  tail -4 skills.txt
+  230  rm *.txt
+  231  ls
+  232  cd Trybe-Exercícios/
+  233  ls
+  234  cd Fundamentos/
+  235  ls
+  236  cd Bloco01-Unix\&Bash/
+  237  ls
+  238  cd Dia03-Unix\&Bash_Parte1/
+  239  ls
+  240  cd unix_tests
+  241  ls
+  242  clear
+  243  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  244  ls
+  245  cat countries.txt
+  246  less countries.txt
+  247  clear
+  248  less countries.txt
+  249  whatis less
+  250  man less
+  251  less countries.txt 
+  252  clear
+  253  less countries.txt 
+  254  grep Brazil countries.txt 
+  255  -i grep Brazil countries.txt 
+  256  grep -i Brazil countries.txt 
+  257  grep -i brazil countries.txt 
+  258  clear
+  259  touch phrases.txt
+  260  ls
+  261  cat > phrases.txt
+  262  ls
+  263  cat phrases.txt 
+  264  grep -iv fox phrases.txt 
+  265  clear
+  266  wc -w phrases.txt 
+  267  wc -l phrases.txt 
+  268  touch empty.tbt empty.pdf
+  269  ls
+  270  ls *txt
+  271  ls *tbt & *txt
+  272  ls *tbt | *txt
+  273  man ls
+  274  clear
+  275  ls
+  276  ls *tbt *txt
+  277  clear
+  278  git config --list
+  279  git --version
+  280  ls
+  281  cd /Trybe_exercícios/
+  282  cd Trybe-Exercícios/Fundamentos/Bloco01-Unix\&Bash/Dia03
+  283  ls
+  284  clear
+  285  mkdir unix_tests
+  286  ls
+  287  touch trybe.txt
+  288  ls
+  289  cp trybe.txt trybe_backup.txt
+  290  ls
+  291  mv trybe.txt novotrybe.txt
+  292  ls
+  293  clear
+  294  ls
+  295  cd unix_tests
+  296  ls
+  297  mkdir backup
+  298  ls
+  299  cd ..
+  300  ls
+  301  ls *
+  302  mv trybe_backup.txt /home/tayna/Trybe-Exercícios/Fundamentos/Bloco01-Unix\&Bash/Dia03/unix_tests/backup/
+  303  clear
+  304  ls
+  305  cd unix_tests/
+  306  ls
+  307  mkdir backup2
+  308  ls
+  309  cd backup
+  310  ls
+  311  mv trybe_backup.txt /home/tayna/Trybe-Exercícios/Fundamentos/Bloco01-Unix\&Bash/Dia03/unix_tests/backup2
+  312  ls
+  313  cd ..
+  314  ls
+  315  cd backup2
+  316  ls
+  317  cd ..
+  318  ls
+  319  rm backup
+  320  rmdir backup
+  321  ls
+  322  mv backup2 backup
+  323  ls
+  324  pwd
+  325  ls
+  326  rmdir backup
+  327  rm rf backup
+  328  rm -rf backup
+  329  ls
+  330  clear
+  331  ls
+  332  cd ..
+  333  ls
+  334  clear
+  335  ls
+  336  cd unix_tests/
+  337  touch skills.txt
+  338  ls
+  339  cat > skills.txt 
+  340  head -5 skills.txt 
+  341  tail -4 skills.txt 
+  342  ls
+  343  rm *txt
+  344  ls
+  345  clear
+  346  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  347  ls
+  348  cat countries.txt 
+  349  clear
+  350  less countries.txt 
+  351  grep Brazil countries.txt 
+  352  grep -in Brazil countries.txt 
+  353  grep -i brazil countries.txt 
+  354  touch phrases.txt
+  355  ls
+  356  cat > phrases.txt 
+  357  grep -iv fox phrases.txt 
+  358  wc -w phrases.txt 
+  359  wc -l phrases.txt 
+  360  touch empty.tbt empty.pdf
+  361  ls
+  362  clear
+  363  ls
+  364  ls *.txt
+  365  ls *.tbt *.txt
+  366  man ls
+  367  history | tail -n 200 > meus_comandos.txt
