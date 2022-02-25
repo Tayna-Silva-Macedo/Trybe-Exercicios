@@ -1,0 +1,16 @@
+h1, p {
+  text-align: center;
+}
+
+ul, ol {
+  list-style: none
+}
+
+li:hover {
+  background-color: yellow;
+}
+
+li:active {
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
+}
