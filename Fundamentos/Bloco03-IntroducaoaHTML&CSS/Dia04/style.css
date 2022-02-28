@@ -57,6 +57,12 @@ aside p {
     text-align: center;
 }
 
+.button-center a:hover {
+    background-color: rgba(0, 255, 64, 0.966);
+    color:white;
+    padding: 10px 18px;
+}
+
 .img-inicio {
     width: 400px;
     display: inline-block;
