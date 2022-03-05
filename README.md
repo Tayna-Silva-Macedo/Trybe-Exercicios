@@ -5,7 +5,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web
+## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 #### Bloco 1: Unix & Bash
 - [x] 1-3: Fundamentos do Desenvolvimento Web
 - [x] 1-3: Introdução - Unix & Shell
@@ -67,7 +67,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 9-3: Jest - Testes Assíncronos
 - [ ] 9-4: Projeto - Carrinho de Compras
 
-## Desenvolvimento Front-end
+## Desenvolvimento Front-end :hourglass_flowing_sand:
 #### Bloco 10: Introdução à React
 - [ ] 10-1: Introdução - Front-end
 - [ ] 10-1: Introdução - React
@@ -106,7 +106,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 17-4: Projeto - StarWars Datatable com Context API e Hooks
 #### Bloco 18: Projeto App de Receitas
 - [ ] 18-1: App de Receitas
-## Desenvolvimento Back-end
+
+## Desenvolvimento Back-end :hourglass_flowing_sand:
 #### Bloco 19: Docker: Utilizando Containers
 - [ ] 19-1: Introdução - Back-end
 - [ ] 19-1: Utilizando Containers - Docker
@@ -182,7 +183,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 31-2: Dia 2
 #### Bloco 32: Projeto - App de Delivery
 - [ ] 32-1: Projeto - App de Delivery
-## Ciência da Computação
+
+## Ciência da Computação :hourglass_flowing_sand:
 #### Bloco 33: Introdução à Python
 - [ ] 33-1: Introdução - Ciência da Computação
 - [ ] 33-1: Aprendendo Python
