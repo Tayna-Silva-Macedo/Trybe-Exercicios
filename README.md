@@ -1,5 +1,3 @@
-"Neste repositório estão todos os exercícios feitos durante o curso de Desenvolvimento Web na Trybe"
-
 # Trybe
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por Tayná Silva Macêdo enquanto estudava na Trybe rocket
 
@@ -109,79 +107,110 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 #### Bloco 18: Projeto App de Receitas
 - [ ] 18-1: App de Receitas
 ## Desenvolvimento Back-end hourglass_flowing_sand
-Bloco 20: Introdução - Bancos de dados relacionais
- 20-1: Banco de dados SQL
- 20-2: Encontrando dados em um banco de dados
- 20-3: Filtrando dados de forma específica
- 20-4: Manipulando tabelas
- 20-5: Projeto - All For One
-Bloco 21: Bancos de dados relacionais
- 21-1: Funções mais usadas no SQL
- 21-2: Descomplicando JOINs e UNIONs
- 21-3: Stored Routines & Subqueries
- 21-4: Projeto - Vocabulary Booster
-Bloco 22: Bancos de dados relacionais
- 22-1: Transformando ideias em um modelo de banco de dados
- 22-2: Normalização, Formas Normais e Dumps
- 22-2: Transformando ideias em um modelo de banco de dados - Parte 2
- 22-3: Projeto - One For All
-Bloco 23: Introdução - NoSQL
- 23-1: MongoDB - Introdução
- 23-2: Filter Operators
- 23-3: Projeto - Data Flights
-Bloco 24: Updates
- 24-1: Updates Simples
- 24-2: Updates Complexos - Arrays - Parte 1
- 24-3: Updates Complexos - Arrays - Parte 2
- 24-4: Projeto - Commerce
-Bloco 25: Aggregation Framework
- 25-1: Aggregation Framework - Part 1
- 25-2: Aggregation Framework - Part 2
- 25-3: Projeto - Aggregations
-Bloco 26: Intro - NodeJS
- 26-1: NodeJS - Introdução
- 26-2: NodeJS - Fluxo Assíncrono
- 26-3: NodeJS - Arquitetura
- 26-4: Projeto - A CLI of Ice and Fire
-Bloco 27: NodeJS
- 27-1: Express: HTTP com Node.js
- 27-2: Arquitetura de Software - Introdução ao MVC
- 27-3: Projeto - Cookmaster
-Bloco 28: NodeJS
- 28-1: Arquitetura de Software - Camada de Serviço
- 28-2: Arquitetura web - Rest e Restful
- 28-3: Projeto - Store Manager
-Bloco 29: NodeJS
- 29-1: NodeJS - JWT - (JSON Web Token)
- 29-2: NodeJS - Upload de arquivos com Multer
- 29-3: Projeto - Cookmaster V2
-Bloco 30: Introdução - Deploy
- 30-1: Infraestrutura - Deploy com Heroku
- 30-2: Deploy - Gerenciadores de Processos
- 30-3: Projeto - Stranger Things
-Bloco 31: Projeto
- 31-1: Projeto - Trybeer
-Bloco 32: Arquitetura de Software
- 32-1: Arquitetura - Princípios SOLID
- 32-2: ORM - Interface da aplicação com o banco de dados
- 32-3: Arquitetura de Software - DDD
- 32-4: Boas práticas na escrita de testes
- 32-3: Projeto - API de Blogs
-Bloco 33: Sockets
- 30-1: Sockets - TCP/UDP & NET
- 30-2: Sockets - Socket.io
- 30-3: Projeto - Webchat
-Bloco 34: Projeto
- 34-1: Projeto - Trybeer V2
+#### Bloco 19: Docker: Utilizando Containers
+- [ ] 19-1: Introdução - Back-end
+- [ ] 19-1: Utilizando Containers - Docker
+- [ ] 19-2: Manipulação e Criação de Imagens no Docker
+- [ ] 19-3: Orquestrando Containers com Docker Compose
+- [ ] 19-4: Projeto - Docker Todo-List
+#### Bloco 20: Introdução à SQL
+- [ ] 20-1: Introdução - Bancos de dados relacionais
+- [ ] 20-1: Banco de dados SQL
+- [ ] 20-2: Encontrando dados em um banco de dados
+- [ ] 20-3: Filtrando dados de forma específica
+- [ ] 20-4: Manipulando tabelas
+- [ ] 20-5: Projeto - All For One
+#### Bloco 21: Funções SQL, JOINs e Normalização
+- [ ] 21-1: Funções mais usadas no SQL
+- [ ] 21-2: Descomplicando JOINs
+- [ ] 21-3: Transformando ideias em um modelo de banco de dados
+- [ ] 21-4: Aula ao vivo + Projeto - One For All
+#### Bloco 22: Introdução ao desenvolvimento Web com Node.js
+- [ ] 22-1: Intro - Node.js
+- [ ] 22-1: Node.js - Um motor JavaScript
+- [ ] 22-2: Node.js - Fluxo Assíncrono
+- [ ] 22-3: Mocha, Chai e Sinon - Testes de Back-end com Node.js
+- [ ] 22-4: Express - HTTP com Node.js
+- [ ] 22-5: Express - Middlewares
+- [ ] 22-6: Projeto - Talker Manager
+#### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
+- [ ] 23-1: Introdução - Arquitetura de Software
+- [ ] 23-1: Arquitetura de Software - Camada de Model
+- [ ] 23-2: Arquitetura de Software - Camada de Controller e Service
+- [ ] 23-3: Arquitetura Web - Rest e Restful
+- [ ] 23-4: Arquitetura de Software - Testando as Camadas 
+- [ ] 23-5: Projeto - Store Manager
+#### Bloco 24: Node.js: ORM e Autenticação
+- [ ] 24-1: Introdução - Node.js: ORM e Autenticação
+- [ ] 24-1: ORM - Interface da aplicação com o banco de dados
+- [ ] 24-2: ORM - Associations
+- [ ] 24-3: JWT - (JSON Web Token)
+- [ ] 24-4: Testando APIs com Testes de Integração
+- [ ] 24-5: Projeto - API de Blogs
+#### Bloco 25: Deployment
+- [ ] 25-1: Introdução - Deploy
+- [ ] 25-1: Infraestrutura - Deploy com Heroku
+- [ ] 25-2: Deploy Docker & Heroku
+- [ ] 25-3: Projeto - Stranger Things
+#### Bloco 26: TypeScript
+- [ ] 26-1: Introdução - TypeScript
+- [ ] 26-1: Introdução ao TypeScript
+- [ ] 26-2: Tipagem Estática e Generics
+- [ ] 26-3: Express com TypeScript
+- [ ] 26-4: Projeto - Trybe Smith
+#### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
+- [ ] 27-1: Introdução à Orientação a Objetos
+- [ ] 27-2: Heranças e Interfaces
+- [ ] 27-3: Polimorfismo
+- [ ] 27-4: SOLID - Introdução e Princípios S, O e D
+- [ ] 27-5: SOLID - Princípios L e I
+- [ ] 27-6: Projeto - Trybers and Dragons
+#### Bloco 28: Projeto - TFC - Trybe Futebol Clube
+- [ ] 28-1: Projeto - TFC - Trybe Futebol Clube
+#### Bloco 29: Introdução ao MongoDB
+- [ ] 29-1: Introdução - NoSQL
+- [ ] 29-1: MongoDB - Introdução
+- [ ] 29-2: Filter Operators
+- [ ] 29-3: Operadores de consulta
+- [ ] 29-4: Updates Simples
+- [ ] 29-5: Updates Complexos - Arrays
+- [ ] 29-6: Projeto - Commerce
+#### Bloco 30: 
+
+#### Bloco 31: MasterClass - VPS, CI/CD
+- [ ] 31-1: Dia 1
+- [ ] 31-2: Dia 2
+#### Bloco 32: Projeto - App de Delivery
+- [ ] 32-1: Projeto - App de Delivery
 ## Ciência da Computação hourglass_flowing_sand
-Bloco 35: Introdução - Ciência da Computação
- 35-1: Arquitetura de Computadores
- 35-2: Arquitetura de redes
- 35-3: Redes de computadores, ferramentas e segurança
- 35-4: Projeto - Explorando os protocolos
-Bloco 36: Python
- 35-1: Aprendendo Python
- 35-2: Testes e Exceções
- 35-3: Entrada e Saída de dados
- 36-4: Entrada e Saída de dados
- 35-5: Projeto - Tech news
+#### Bloco 33: Introdução à Python
+- [ ] 33-1: Introdução - Ciência da Computação
+- [ ] 33-1: Aprendendo Python
+- [ ] 33-2: Entrada e Saída de Dados
+- [ ] 33-3: Testes
+- [ ] 33-4: Projeto - Job Insights
+#### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto
+- [ ] 34-1: Introdução à programação orientada a objetos
+- [ ] 34-2: Herança, Composição e Interfaces
+- [ ] 34-3: Padrões de projeto
+- [ ] 34-4: Projeto - Relatórios de Estoque
+#### Bloco 35: Redes e Raspagem de Dados
+- [ ] 35-1: Arquitetura de redes
+- [ ] 35-2: Redes de computadores, ferramentas e segurança
+- [ ] 35-3: Raspagem de Dados
+- [ ] 35-4: Projeto - Tech news
+#### Bloco 36: Algoritmos
+- [ ] 36-1: Complexidade de Algoritmos
+- [ ] 36-2: Recursividade e Estratégias para solução de problemas
+- [ ] 36-3: Algoritmos de ordenação e busca
+- [ ] 36-4: Projeto - Algoritmos
+#### Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets
+- [ ] 37-1: Arquitetura de Computadores
+- [ ] 37-2: Arrays
+- [ ] 37-3: Hashmap e Dict
+- [ ] 37-4: Set
+- [ ] 37-5: Projeto - Restaurant Orders
+#### Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas
+- [ ] 38-1: Nó e Listas Encadeadas
+- [ ] 38-2: Pilhas e Filas 
+- [ ] 38-3: Projeto - TING - Trybe Is Not Google
