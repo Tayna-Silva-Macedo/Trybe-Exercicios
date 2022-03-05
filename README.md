@@ -1,11 +1,11 @@
 # Trybe
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por Tayná Silva Macêdo enquanto estudava na Trybe rocket
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por Tayná Silva Macêdo enquanto estudava na Trybe :rocket:
 
 > "A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web white_check_mark
+## Fundamentos do Desenvolvimento Web
 #### Bloco 1: Unix & Bash
 - [x] 1-3: Fundamentos do Desenvolvimento Web
 - [x] 1-3: Introdução - Unix & Shell
@@ -67,7 +67,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 9-3: Jest - Testes Assíncronos
 - [ ] 9-4: Projeto - Carrinho de Compras
 
-## Desenvolvimento Front-end hourglass_flowing_sand
+## Desenvolvimento Front-end
 #### Bloco 10: Introdução à React
 - [ ] 10-1: Introdução - Front-end
 - [ ] 10-1: Introdução - React
@@ -106,7 +106,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 17-4: Projeto - StarWars Datatable com Context API e Hooks
 #### Bloco 18: Projeto App de Receitas
 - [ ] 18-1: App de Receitas
-## Desenvolvimento Back-end hourglass_flowing_sand
+## Desenvolvimento Back-end
 #### Bloco 19: Docker: Utilizando Containers
 - [ ] 19-1: Introdução - Back-end
 - [ ] 19-1: Utilizando Containers - Docker
@@ -182,7 +182,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 31-2: Dia 2
 #### Bloco 32: Projeto - App de Delivery
 - [ ] 32-1: Projeto - App de Delivery
-## Ciência da Computação hourglass_flowing_sand
+## Ciência da Computação
 #### Bloco 33: Introdução à Python
 - [ ] 33-1: Introdução - Ciência da Computação
 - [ ] 33-1: Aprendendo Python
