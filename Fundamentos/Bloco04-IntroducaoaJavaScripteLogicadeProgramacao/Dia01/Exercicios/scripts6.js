@@ -1,18 +1,25 @@
-let piece = "Queen";
-let chessPiece = piece.toLowerCase();
+let chessPiece = "KING";
 
-if (chessPiece === "king") {
-  console.log("O rei anda em todas as direções, uma casa por vez.");
-} else if (chessPiece === "queen") {
-  console.log("A rainha anda em todas as direções, quantas casas quiser.");
-} else if (chessPiece === "bishop") {
-  console.log("O bispo anda na diagonal.");
-} else if (chessPiece === "rook") {
-  console.log("A torre anda na vertical e horizontal.");
-} else if (chessPiece === "knight") {
-  console.log("O cavalo anda em L.");
-} else if (chessPiece === "pawn") {
-  console.log("O peão anda em frente.");
-} else {
-  console.log("Peça inválida!");
+switch (chessPiece.toLowerCase()) {
+  case "king":
+    console.log("O rei anda em todas as direções, uma casa por vez.");
+    break;
+  case "queen":
+    console.log("A rainha anda em todas as direções, quantas casas quiser.");
+    break;
+  case "bishop":
+    console.log("O bispo anda na diagonal.");
+    break;
+  case "rook":
+    console.log("A torre anda na vertical e horizontal.");
+    break;
+  case "knight":
+    console.log("O cavalo anda em L.");
+    break;
+  case "pawn":
+    console.log("O peão anda em frente.");
+    break;
+  default:
+    console.log("Peça inválida!");
+    break;
 }
