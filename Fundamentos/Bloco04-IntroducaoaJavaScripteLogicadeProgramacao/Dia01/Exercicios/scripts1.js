@@ -7,8 +7,8 @@ const multiplicacao = a * b;
 const divisao = a / b;
 const modulo = a % b;
 
-console.log("Soma: " + soma)
-console.log("Subtração: " + subtracao)
-console.log("Multiplicação: " + multiplicacao)
-console.log("Divisão: " + divisao)
-console.log("Módulo: " + modulo)
+console.log("Soma: " + soma);
+console.log("Subtração: " + subtracao);
+console.log("Multiplicação: " + multiplicacao);
+console.log("Divisão: " + divisao);
+console.log("Módulo: " + modulo);
