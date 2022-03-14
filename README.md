@@ -30,7 +30,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-4: JavaScript - Objetos e funções
 - [x] 4-5: Projeto - Playground Functions
 #### Bloco 5: JavaScript: DOM, Eventos e Web Storage
-- [ ] 5-1: JavaScript - DOM e seletores
+- [x] 5-1: JavaScript - DOM e seletores
 - [ ] 5-2: JavaScript - Trabalhando com elementos
 - [ ] 5-3: JavaScript - Eventos
 - [ ] 5-4: JavaScript - Web Storage
