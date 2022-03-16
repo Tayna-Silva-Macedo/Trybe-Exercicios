@@ -15,6 +15,7 @@ function mudarClasseTech(evento) {
   let elementoClasseTech = document.querySelector(".tech");
   elementoClasseTech.classList.remove("tech");
   evento.target.classList.add("tech");
+  input.value = "";
 }
 
 firstLi.addEventListener("click", mudarClasseTech);
@@ -45,12 +46,12 @@ function mudaACor(evento) {
   evento.target.style.color = "red";
 }
 
-function voltaCor(evento) {
+function voltaCorInicial(evento) {
   evento.target.style.color = "unset";
 }
 
 myWebpage.addEventListener("mouseover", mudaACor);
-myWebpage.addEventListener("mouseout", voltaCor);
+myWebpage.addEventListener("mouseout", voltaCorInicial);
 
 // Segue abaixo um exemplo do uso de event.target:
 
