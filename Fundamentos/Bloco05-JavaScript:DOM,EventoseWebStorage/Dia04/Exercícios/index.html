@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inspiration&family=League+Gothic&family=Open+Sans:wght@300&family=Smooch+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Leitor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section>
+      <label for="">Cor de fundo da tela:</label>
+      <select name="select" id="select-backgroundColor">
+        <option value="red">Vermelho</option>
+        <option value="blue">Azul</option>
+        <option value="white">Branco</option>
+        <option value="yellow">Amarelo</option>
+        <option value="gray">Cinza</option>
+      </select>
+    </section>
+
+    <section>
+      <label for="">Cor do texto:</label>
+      <select name="" id="select-color">
+        <option value="red">Vermelho</option>
+        <option value="blue">Azul</option>
+        <option value="black">Preto</option>
+        <option value="yellow">Amarelo</option>
+        <option value="gray">Cinza</option>
+      </select>
+    </section>
+
+    <section>
+      <label for="">Tamanho da fonte (px):</label>
+      <input type="number" name="" id="input-tamanhoDoTexto" min="1" />
+    </section>
+
+    <section>
+      <label for="">Espaçamento entre as linhas do texto (cm):</label>
+      <input
+        type="number"
+        name=""
+        id="input-espacamentoDeLinhas"
+        min="0.25"
+        step="0.25"
+      />
+    </section>
+
+    <section>
+      <label for="">Tipo da fonte:</label>
+      <select name="" id="select-fontFamily">
+        <option value="'Times New Roman'">Times New Roman</option>
+        <option value="'Inspiration', cursive">Inspiration</option>
+        <option value="'Open Sans', sans-serif">Open Sans</option>
+        <option value="'League Gothic', sans-serif">League Gothic</option>
+        <option value="'Smooch Sans', sans-serif">Smooch Sans</option>
+      </select>
+    </section>
+
+    <section>
+      <p id="paragrafo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+        faucibus quis magna non dapibus. Maecenas nec elit et enim convallis
+        hendrerit et vehicula augue. Nunc suscipit lorem nec magna venenatis,
+        nec lobortis nisi suscipit. Etiam lectus metus, laoreet a magna
+        interdum, venenatis finibus tortor. Vestibulum imperdiet neque in
+        pellentesque viverra. Curabitur nisl purus, lobortis ac viverra vel,
+        ultrices eu ex. Nunc bibendum dolor ut diam lacinia, ac tristique lacus
+        vestibulum. Vivamus at volutpat purus. Quisque tincidunt tincidunt nulla
+        vitae mollis. Praesent cursus, lacus id venenatis fermentum, orci orci
+        accumsan neque, vel blandit purus nisi id nisi. Nam cursus elementum
+        orci, sed egestas lorem maximus eget. Mauris pulvinar venenatis est eget
+        tempor.
+      </p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
