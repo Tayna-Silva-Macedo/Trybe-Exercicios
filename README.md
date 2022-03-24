@@ -41,7 +41,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 5-7: (Bônus) Projeto - Adivinhe a Cor
 - [ ] 5-7: (Bônus) Projeto - Carta Misteriosa
 #### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
-- [ ] 6-1: HTML & CSS - Forms
+- [x] 6-1: HTML & CSS - Forms
 - [ ] 6-2: Bibliotecas JavaScript e Frameworks CSS
 - [ ] 6-2: Bibliotecas JavaScript e Frameworks CSS
 - [ ] 6-3: Introdução - CSS Flexbox
