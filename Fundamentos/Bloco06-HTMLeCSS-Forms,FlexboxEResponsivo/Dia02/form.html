@@ -4,19 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <title>Formulário Viagem</title>
   </head>
 
   <body>
     <header>
-      <h1 class="display-4 text-muted">Inscreva-se para concorrer à viagem!</h1>
+      <h1 class="text-muted font-monospace">
+        Inscreva-se para concorrer à viagem!
+      </h1>
     </header>
 
     <form action="" method="get">
       <fieldset>
-        <div class="form-group">
-          <label for="nome-completo"> Nome completo: </label>
+        <div class="mb-3">
+          <label class="form-label" for="nome-completo"> Nome completo: </label>
           <input
             class="form-control"
             type="text"
@@ -27,8 +34,8 @@
             required
           />
         </div>
-        <div class="form-group">
-          <label for="email"> Email: </label>
+        <div class="mb-3">
+          <label class="form-label" for="email"> Email: </label>
           <input
             class="form-control"
             type="email"
@@ -39,104 +46,120 @@
             required
           />
         </div>
-        <div class="form-group">
-          <label for="destino-preferido">
-            Destino preferido:
+        <div class="mb-3">
+          <fieldset>
+            <legend class="fs-6">Destino preferido:</legend>
             <input
+              class="form-check-input"
               type="radio"
               name="destino"
-              id="destino-preferido"
+              id="destino-1"
+              value="cidade"
               required
             />
-            Cidade
+            <label class="form-label" for="destino-1">Cidade</label>
             <input
+              class="form-check-input"
               type="radio"
               name="destino"
-              id="destino-preferido"
+              id="destino-2"
+              value="campo"
               required
             />
-            Campo
+            <label class="form-check-label" for="destino-2">Campo</label>
             <input
-              class="form-group"
+              class="form-check-input"
               type="radio"
               name="destino"
-              id="destino-preferido"
+              id="destino-3"
+              value="praia"
               required
             />
-            Praia
+            <label class="form-check-label" for="destino-3">Praia</label>
             <input
-              class="form-group"
+              class="form-check-input"
               type="radio"
               name="destino"
-              id="destino-preferido"
+              id="destino-4"
+              value="montanhas"
               required
             />
-            Montanhas
-          </label>
+            <label class="form-check-label" for="destino-4">Montanhas</label>
+          </fieldset>
         </div>
-        <div class="form-group">
-          <label for="justificativa">
-            Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
-            TrybeTrip?
-          </label>
+        <div class="mb-3">
+          <div>
+            <label class="form-check-label" for="justificativa">
+              Por que você deveria ser a pessoa desenvolvedora a ganhar o
+              concurso TrybeTrip?
+            </label>
+          </div>
+          <div>
+            <textarea
+              class="form-control"
+              name="justificativa"
+              id="justificativa"
+              cols="60"
+              rows="10"
+              maxlength="500"
+            ></textarea>
+          </div>
         </div>
-        <div class="form-group">
-          <textarea
-            class="form-control"
-            name="justificativa"
-            id="justificativa"
-            cols="60"
-            rows="10"
-            maxlength="500"
-          ></textarea>
+        <div class="mb-3">
+          <div>
+            <label class="form-label" for="data-viagem">
+              Qual a melhor data para realizar sua viagem?
+            </label>
+          </div>
+          <div>
+            <input type="date" name="data-viagem" id="data-viagem" />
+          </div>
         </div>
-        <div class="form-group">
-          <label for="data-viagem">
-            Qual a melhor data para realizar sua viagem?
-          </label>
-        </div>
-        <div class="form-group">
-          <input
-            clas="form-control"
-            type="date"
-            name="data-viagem"
-            id="data-viagem"
-          />
-        </div>
-        <div class="form-group">
-          <label for="oportunidades">
-            Gostaria de receber outras incríveis oportunidades oferecidas pela
-            Trybe?
-          </label>
-          <input
-            class="form-group"
-            type="checkbox"
-            name="oportunidades"
-            id="oportunidades"
-          />
-        </div>
-        <div class="form-group">
-          <label for="divulgacao">
-            Concordo que imagens das minhas férias poderão ser usadas na
-            divulgação de concursos futuros.
-          </label>
-          <input
-            class="form-group"
-            type="checkbox"
-            name="divulgacao"
-            id="divulgacao"
-          />
+        <div class="mb-3">
+          <div>
+            <label class="form-check-label" for="oportunidades">
+              Gostaria de receber outras incríveis oportunidades oferecidas pela
+              Trybe?
+            </label>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="oportunidades"
+              id="oportunidades"
+            />
+          </div>
+          <div>
+            <label class="form-check-label" for="divulgacao">
+              Concordo que imagens das minhas férias poderão ser usadas na
+              divulgação de concursos futuros.
+            </label>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="divulgacao"
+              id="divulgacao"
+            />
+          </div>
         </div>
       </fieldset>
-      <div class="form-group">
-        <button class="btn btn-sucess" type="submit" id="botao-enviar" disabled>Enviar</button>
-
-        <button type="reset">Limpar</button>
+      <div>
+        <button
+          class="btn btn-primary mb-3"
+          type="submit"
+          id="botao-enviar"
+          disabled
+        >
+          Enviar
+        </button>
+        <button class="btn btn-danger mb-3" type="reset">Limpar</button>
       </div>
     </form>
 
     <script src="script.js"></script>
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
