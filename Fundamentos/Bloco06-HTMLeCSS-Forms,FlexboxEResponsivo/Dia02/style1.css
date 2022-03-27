@@ -1,6 +1,8 @@
 body {
   color: rgb(93, 96, 99);
-  background-color: rgb(234, 237, 240);
+  background-image: url("fotoFundo.jpg");
+  background-size: cover;
+
 }
 
 header,
@@ -16,9 +18,13 @@ form {
 }
 
 p {
-  margin-bottom: -7px;
+  margin-bottom: 0px;
 }
 
 #reset {
   background-color: red;
+}
+
+#justificativa {
+  min-height: 150px;
 }
