@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Formulário Viagem</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="card-panel indigo lighten-3">
+        <h3 class="white-text center-align">
+          Inscreva-se para concorrer à viagem!
+        </h3>
+      </header>
+
+      <div class="row">
+        <form class="col s12" id="form" action="" method="get">
+          <div class="row">
+            <div class="input-field col s12">
+              <label for="nome-completo"> Nome completo </label>
+              <input
+                class="validate"
+                type="text"
+                id="nome-completo"
+                minlength="10"
+                maxlength="40"
+                required
+              />
+              <span
+                class="helper-text"
+                data-error="Nome inválido"
+                data-success="Correto!"
+              ></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <label for="email"> Email </label>
+              <input
+                class="validate"
+                type="email"
+                id="email"
+                minlength="10"
+                maxlength="50"
+                required
+              />
+              <span
+                class="helper-text"
+                data-error="Email inválido"
+                data-success="Correto!"
+              ></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="row">
+              <div class="col s12">
+                <p class="col s12">Destino preferido:</p>
+                <p class="col">
+                  <label for="destino-1">
+                    <input
+                      class="with-gap"
+                      type="radio"
+                      name="destino"
+                      id="destino-1"
+                      value="cidade"
+                      required
+                    />
+                    <span>Cidade</span>
+                  </label>
+                </p>
+                <p class="col">
+                  <label for="destino-2">
+                    <input
+                      class="with-gap"
+                      type="radio"
+                      name="destino"
+                      id="destino-2"
+                      value="campo"
+                      required
+                    />
+                    <span>Campo</span>
+                  </label>
+                </p>
+                <p class="col">
+                  <label for="destino-3">
+                    <input
+                      class="with-gap"
+                      type="radio"
+                      name="destino"
+                      id="destino-3"
+                      value="praia"
+                      required
+                    />
+                    <span>Praia</span>
+                  </label>
+                </p>
+                <p class="col">
+                  <label for="destino-4">
+                    <input
+                      class="with-gap"
+                      type="radio"
+                      name="destino"
+                      id="destino-4"
+                      value="montanhas"
+                      required
+                    />
+                    <span>Montanhas</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea
+                class="materialize-textarea"
+                name="justificativa"
+                id="justificativa"
+                cols="60"
+                rows="10"
+                maxlength="500"
+              ></textarea>
+              <label for="justificativa">
+                Por que você deveria ganhar o concurso TrybeTrip?
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <p>Qual a melhor data para realizar sua viagem?</p>
+              <input type="date" name="data-viagem" id="data-viagem" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <p>
+                <label for="oportunidades">
+                  <input
+                    class="filled-in"
+                    type="checkbox"
+                    name="oportunidades"
+                    id="oportunidades"
+                  />
+                  <span
+                    >Gostaria de receber outras incríveis oportunidades
+                    oferecidas pela Trybe?</span
+                  >
+                </label>
+              </p>
+            </div>
+            <div class="col s12">
+              <p>
+                <label for="divulgacao">
+                  <input
+                    class="filled-in"
+                    type="checkbox"
+                    name="divulgacao"
+                    id="divulgacao"
+                  />
+                  <span
+                    >Concordo que imagens das minhas férias poderão ser usadas
+                    na divulgação de concursos futuros.</span
+                  >
+                </label>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <button
+                class="btn waves-effect waves-light"
+                type="submit"
+                id="botao-enviar"
+                disabled
+              >
+                Enviar
+                <i class="material-icons right">send</i>
+              </button>
+              <button
+                class="btn waves-effect waves-light"
+                type="reset"
+                id="reset"
+              >
+                Limpar
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script1.js"></script>
+  </body>
+</html>
