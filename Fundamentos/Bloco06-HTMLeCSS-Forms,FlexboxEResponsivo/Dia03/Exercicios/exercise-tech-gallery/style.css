@@ -61,3 +61,10 @@ h3 {
   margin: 5px;
   box-shadow: 2px 3px rgba(161, 161, 161, 0.5);
 }
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  align-items: center;
+}
