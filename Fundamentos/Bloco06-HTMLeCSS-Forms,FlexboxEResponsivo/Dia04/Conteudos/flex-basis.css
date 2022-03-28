@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 50px;
+  margin: auto;
+  width: 100%;
+}
+
+.box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* Altere a propriedade flex-basis */
+  flex-basis: 50px;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.one {
+  background-color: #fbd26a;
+  list-style: none;
+}
+
+.two {
+  background-color: #faa488;
+  list-style: none;
+}
+
+.three {
+  background-color: #9069ef;
+  list-style: none;
+}
+
+.four {
+  background-color: #006472;
+  list-style: none;
+}
