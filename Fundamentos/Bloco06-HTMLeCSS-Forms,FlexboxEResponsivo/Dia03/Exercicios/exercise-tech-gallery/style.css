@@ -30,3 +30,9 @@
 h3 {
   text-decoration: underline;
 }
+
+.container-texto {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
