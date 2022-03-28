@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+.header-img {
+  width: 50px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #363636;
+  color: white;
+  font-size: 12px;
+  align-items: center;
+}
+
+h3 {
+  text-decoration: underline;
+}
