@@ -44,31 +44,30 @@
 
 // botao.addEventListener('click', contador);
 
-const skills = ["Android", "iOS", "Architecture", "Teach", "Run"];
+const stringQualquer = "Tryber x aqui!";
+const skills = ["HTML", "CSS", "JavaScript", "Organização", "Responsabilidade"];
 
-function construindoFraseSkills(par1) {
-  const funcao1 = (parInterno) => `Tryber ${parInterno} aqui!
+const fraseFinal = (parametro) => {
+  const trocaX = (nome) => `${stringQualquer.replace("x", nome)}
   
   Tudo bem?`;
 
-  let resultado = `${funcao1(par1)}
+  let resultado = `${trocaX(parametro)}
   
   Minhas cinco principais habilidades são:`;
 
-  skills.forEach(
-    (skill, index) =>
-      (resultado = `${resultado}
-  
-  -${skill}`)
-  );
+  const arrayOrdenada = skills.sort();
 
-  resultado = `
-  ${resultado}
+  for (const skill of arrayOrdenada) {
+    resultado = `${resultado} 
+    - ${skill};`;
+  }
+
+  resultado = `${resultado}
   
-  #goTrybe
-  `;
+  #goTrybe`;
 
   return resultado;
-}
+};
 
-console.log(construindoFraseSkills("Tayná"));
+console.log(fraseFinal("Tayná"));
