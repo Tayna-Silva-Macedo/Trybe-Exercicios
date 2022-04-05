@@ -1,4 +1,4 @@
-function hydrate(string) {
+const hydrate = (string) => {
   let reg = /\d+/g;
   let arrayNumerosString = string.match(reg);
   let arrayNumeros = [];
@@ -16,4 +16,6 @@ function hydrate(string) {
     return `${soma} copos de água`;
   }
   return `${soma} copo de água`;
-}
+};
+
+module.exports = hydrate;
