@@ -5,7 +5,7 @@ test('Testa o resultado da soma', () => {
   expect(sum(0, 0)).toBe(0);
 })
 
-test('Teste se a função sum lança um erro quando os parâmetros são 4 e "5"', () => {
+test('Testa se a função sum lança um erro quando os parâmetros são 4 e "5"', () => {
   expect(() => {sum(4,"5")}).toThrowError();
 })
 
