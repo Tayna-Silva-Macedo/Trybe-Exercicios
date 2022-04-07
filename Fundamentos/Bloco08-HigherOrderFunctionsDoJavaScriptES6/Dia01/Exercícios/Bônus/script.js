@@ -38,8 +38,6 @@ const danoDragao = () => {
   return dano;
 };
 
-console.log(danoDragao());
-
 // 2 - Crie uma função que retorna o dano causado pelo warrior .
 // O dano será um número aleatório entre o valor do atributo strength (dano mínimo) e o valor de strength * weaponDmg (dano máximo).
 
@@ -52,8 +50,6 @@ const danoWarrior = () => {
 
   return dano;
 };
-
-console.log(danoWarrior());
 
 // 3 - Crie uma função que retorna um objeto com duas chaves e dois valores contendo o dano e a mana gasta pelo mago em um turno.
 // O dano será um número aleatório entre o valor do atributo intelligence (dano mínimo) e o valor de intelligence * 2 (dano máximo).
@@ -82,21 +78,45 @@ const danoEManaMage = () => {
   return status;
 };
 
-console.log(danoEManaMage());
-
 // Parte II
 
 // Agora que você já possui a implementação das funções relativas aos três exercícios anteriores, passe-as como parâmetro para outras funções que irão compor um objeto gameActions . O objeto será composto por ações do jogo e cada ação é por denifição uma HOF , pois neste caso, são funções que recebem como parâmetro outra função.
 // Copie o código abaixo e inicie sua implementação:
 
 const gameActions = {
-  // Crie as HOFs neste objeto.
+  // 1 - Crie a primeira HOF que compõe o objeto gameActions. Ela será a função que simula o turno do personagem warrior. Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem warrior e atualizará os healthPoints do monstro dragon. Além disto ela também deve atualizar o valor da chave damage do warrior.
+
+  rodadaWarrior: (danoWarrior) => {
+    const dano = danoWarrior();
+    warrior.damage = dano;
+    dragon.healthPoints -= dano;
+  },
+
+  // 2 - Crie a segunda HOF que compõe o objeto gameActions . Ela será a função que simula o turno do personagem mage . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem mage e atualizará os healthPoints do monstro dragon . Além disto ela também deve atualizar o valor das chaves damage e mana do mage.
+
+  rodadaMage: (danoEManaMage) => {
+    const status = danoEManaMage();
+    const dano = status.dano;
+    mage.damage = dano;
+    mage.mana -= status.manaGasta;
+    dragon.healthPoints -= dano;
+  },
+
+  // 3 - Crie a terceira HOF que compõe o objeto gameActions . Ela será a função que simula o turno do monstro dragon . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo monstro dragon e atualizará os healthPoints dos personagens mage e warrior . Além disto ela também deve atualizar o valor da chave damage do monstro.
+
+  rodadaDragon: (danoDragao) => {
+    const dano = danoDragao();
+    mage.healthPoints -= dano;
+    warrior.healthPoints -= dano;
+    dragon.damage = dano;
+  },
+
+  // 4 - Adicione ao objeto gameActions uma função que retorne o objeto battleMembers atualizado e faça um console.log para visualizar o resultado final do turno.
+
+  resultado: () => battleMembers,
 };
 
-// 1 - Crie a primeira HOF que compõe o objeto gameActions . Ela será a função que simula o turno do personagem warrior . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem warrior e atualizará os healthPoints do monstro dragon . Além disto ela também deve atualizar o valor da chave damage do warrior .
-
-// 2 - Crie a segunda HOF que compõe o objeto gameActions . Ela será a função que simula o turno do personagem mage . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem mage e atualizará os healthPoints do monstro dragon . Além disto ela também deve atualizar o valor das chaves damage e mana do mage.
-
-// 3 - Crie a terceira HOF que compõe o objeto gameActions . Ela será a função que simula o turno do monstro dragon . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo monstro dragon e atualizará os healthPoints dos personagens mage e warrior . Além disto ela também deve atualizar o valor da chave damage do monstro.
-
-// 4 - Adicione ao objeto gameActions uma função que retorne o objeto battleMembers atualizado e faça um console.log para visualizar o resultado final do turno.
+gameActions.rodadaWarrior(danoWarrior);
+gameActions.rodadaMage(danoEManaMage);
+gameActions.rodadaDragon(danoDragao);
+console.log(gameActions.resultado());
