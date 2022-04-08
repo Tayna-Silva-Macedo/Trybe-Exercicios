@@ -65,6 +65,8 @@ const books = [
 
 const expectedResult = false;
 
-function authorUnique() {
-  // escreva seu código aqui
+function authorUnique(array) {
+  return 
 }
+
+console.log(authorUnique(books));
