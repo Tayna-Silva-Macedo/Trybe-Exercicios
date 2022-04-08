@@ -69,11 +69,31 @@ function authorUnique(array) {
   let resposta = true;
 
   array.forEach((elemento) => {
-    if (array.some((item) => elemento.author.birthYear === item.author.birthYear && elemento.author.name !== item.author.name)) {
+    if (
+      array.some(
+        (item) =>
+          elemento.author.birthYear === item.author.birthYear &&
+          elemento.author.name !== item.author.name
+      )
+    ) {
       resposta = false;
-    }});
+    }
+  });
 
   return resposta;
+}
+
+console.log(authorUnique(books));
+
+function authorUnique(array) {
+  return array.every(
+    (book) =>
+      !array.some(
+        (someBook) =>
+          someBook.author.birthYear === book.author.birthYear &&
+          someBook.author.name !== book.author.name
+      )
+  );
 }
 
 console.log(authorUnique(books));
