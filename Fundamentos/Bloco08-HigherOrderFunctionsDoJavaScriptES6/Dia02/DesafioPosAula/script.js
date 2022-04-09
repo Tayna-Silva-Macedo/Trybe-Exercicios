@@ -58,6 +58,14 @@ const estados = [
 
 console.log(estados.find((estado) => estado.SP));
 
+estados.reverse();
+
+estados.forEach((estado) => {
+  console.log(
+    `Sigla: ${Object.keys(estado)}, Estado: ${Object.values(estado)}`
+  );
+});
+
 // Ordene o vetor de estudantes da maior para a menor média, lembrando que a média
 // pode ser calculada somando-se as notas de avalição, projeto e trabalho em grupo
 // e dividindo por 3
