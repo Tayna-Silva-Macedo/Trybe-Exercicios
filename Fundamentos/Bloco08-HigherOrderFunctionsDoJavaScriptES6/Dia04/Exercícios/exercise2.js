@@ -68,17 +68,12 @@ const expectedResult =
 
 function reduceNames(array) {
   const nomes = array.reduce((acumulador, livro, indice) => {
-    if (indice === 0) {
-      return `${livro.author.name}`;
-    }
-
     if (indice === array.length - 1) {
-      return `${acumulador}, ${livro.author.name}.`;
+      return `${acumulador} ${livro.author.name}.`;
     }
-    return `${acumulador}, ${livro.author.name}`;
+    return `${acumulador} ${livro.author.name},`;
   }, "");
-
-  return nomes;
+  return nomes.trim();
 }
 
 console.log(reduceNames(books));
