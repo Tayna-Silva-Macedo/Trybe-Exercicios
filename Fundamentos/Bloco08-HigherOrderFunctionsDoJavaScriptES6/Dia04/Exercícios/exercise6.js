@@ -14,8 +14,8 @@ const expected = [
 ];
 
 function studentAverage(arrayEstudantes, arrayNotas) {
-  const arrayMedias = arrayNotas.map((grade) =>
-    grade.reduce((acc, nota) => acc + nota / grade.length, 0)
+  const arrayMedias = arrayNotas.map(
+    (grade) => grade.reduce((acc, nota) => acc + nota, 0) / grade.length
   );
   const mediasArredondadas = arrayMedias.map((media) => media.toFixed(1));
 
