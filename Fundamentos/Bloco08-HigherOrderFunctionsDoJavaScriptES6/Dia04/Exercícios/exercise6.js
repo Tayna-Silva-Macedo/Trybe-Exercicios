@@ -13,6 +13,16 @@ const expected = [
   { name: "Maria Clara", average: 8.8 },
 ];
 
-function studentAverage() {
-  // escreva seu código aqui
+function studentAverage(arrayEstudantes, arrayNotas) {
+  const arrayMedias = arrayNotas.map((grade) =>
+    grade.reduce((acc, nota) => acc + nota / grade.length, 0)
+  );
+  const mediasArredondadas = arrayMedias.map((media) => media.toFixed(1));
+
+  return arrayEstudantes.map((estudante, index) => ({
+    name: estudante,
+    average: mediasArredondadas[index],
+  }));
 }
+
+console.log(studentAverage(students, grades));
