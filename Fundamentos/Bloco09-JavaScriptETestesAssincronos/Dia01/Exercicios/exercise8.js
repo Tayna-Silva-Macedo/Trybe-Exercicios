@@ -33,7 +33,16 @@ function getPokemonDetails(filter, callback) {
   }, 2000);
 }
 
-getPokemonDetails();
+getPokemonDetails(
+  (pokemon) => pokemon.name === 'Squirtle',
+  (error, msg) => {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log(msg);
+    }
+  }
+);
 
 module.exports = {
   getPokemonDetails,
