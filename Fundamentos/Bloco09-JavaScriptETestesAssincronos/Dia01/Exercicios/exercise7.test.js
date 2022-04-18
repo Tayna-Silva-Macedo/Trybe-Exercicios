@@ -1,12 +1,14 @@
 const uppercase = require('./exercise7');
 
 test("Testa se a função retorna 'TEST' quando chamada com o parâmetro 'test'", (done) => {
-  uppercase('test', (stringUpper) => {
+  const callback = (string) => {
     try {
-      expect(stringUpper).toBe('TEST');
+      expect(string).toBe('TEST');
       done();
     } catch (error) {
       done(error);
     }
-  });
+  };
+
+  uppercase('test', callback);
 });
