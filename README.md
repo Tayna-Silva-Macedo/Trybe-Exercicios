@@ -5,7 +5,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
+## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 #### Bloco 1: Unix & Bash
 - [x] 1-3: Fundamentos do Desenvolvimento Web
 - [x] 1-3: Introdução - Unix & Shell
@@ -63,8 +63,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 #### Bloco 9: JavaScript e Testes Assíncronos
 - [x] 9-1: JavaScript Assíncrono e Callbacks
 - [x] 9-2: JavaScript Assíncrono - Fetch API e async/await
-- [ ] 9-3: Jest - Testes Assíncronos
-- [ ] 9-4: Projeto - Carrinho de Compras
+- [x] 9-3: Jest - Testes Assíncronos
+- [x] 9-4: Projeto - Carrinho de Compras
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 #### Bloco 10: Introdução à React
