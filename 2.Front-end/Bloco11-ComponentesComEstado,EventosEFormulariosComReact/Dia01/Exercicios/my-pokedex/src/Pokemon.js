@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Pokemon.css'
 
 class Pokemon extends React.Component {
   render() {
-    const objetoPokemon = this.props.pokemon;
-    const { name, type, averageWeight, image } = objetoPokemon;
+    const { name, type, averageWeight, image } = this.props.pokemon;
 
     return (
       <div className='pokemon'>

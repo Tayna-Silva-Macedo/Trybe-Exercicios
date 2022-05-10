@@ -1,45 +1,77 @@
 import React from 'react';
 import Pokemon from './Pokemon';
+import Button from './Button';
+import './Pokedex.css';
 
 class Pokedex extends React.Component {
-  constructor() {
-    super();
+  state = {
+    indicePokemon: 0,
+    tipoFiltrado: 'all',
+  };
 
-    this.proximoPokemon = this.proximoPokemon.bind(this);
+  proximoPokemon = (numeroDePokemons) => {
+    this.setState((estadoAnterior) => ({
+      indicePokemon: (estadoAnterior.indicePokemon + 1) % numeroDePokemons,
+    }));
+  };
 
-    this.state = {
+  filtrarPokemons = (tipoFiltrado) => {
+    this.setState({
       indicePokemon: 0,
-    };
-  }
+      tipoFiltrado,
+    });
+  };
 
-  proximoPokemon() {
-    const qtdPokemons = this.props.pokemons.length;
-    const { indicePokemon } = this.state;
+  buscarPokemonsFiltrados = () => {
+    const { pokemons } = this.props;
+    const { tipoFiltrado } = this.state;
 
-    if (indicePokemon < qtdPokemons - 1) {
-      this.setState((estadoAnterior) => ({
-        indicePokemon: estadoAnterior.indicePokemon + 1,
-      }));
-    } else {
-      this.setState({
-        indicePokemon: 0,
-      });
-    }
-  }
+    return pokemons.filter((pokemon) => {
+      if (tipoFiltrado === 'all') {
+        return true;
+      }
+      return pokemon.type === tipoFiltrado;
+    });
+  };
+
+  buscarTiposPokemon = () => {
+    const { pokemons } = this.props;
+
+    return [...new Set(pokemons.reduce((acc, { type }) => [...acc, type], []))];
+  };
 
   render() {
-    const arrayPokemons = this.props.pokemons;
-    const pokemon = arrayPokemons[this.state.indicePokemon];
-    console.log(pokemon);
+    const pokemonsFiltrados = this.buscarPokemonsFiltrados();
+    const tiposPokemon = this.buscarTiposPokemon();
+    const pokemon = pokemonsFiltrados[this.state.indicePokemon];
 
     return (
       <div className='pokedex'>
         <Pokemon pokemon={pokemon} />
-        <button onClick={this.proximoPokemon}>Próximo Pokemón</button>
-
-        {/* {arrayPokemons.map((pokemon) => (
-          <Pokemon key={pokemon.id} pokemon={pokemon} />
-        ))} */}
+        <div className='pokedex-buttons-panel'>
+          <Button
+            onClick={() => this.filtrarPokemons('all')}
+            className='filter-button'
+          >
+            All
+          </Button>
+          {tiposPokemon.map((tipo) => (
+            <Button
+              key={tipo}
+              onClick={() => this.filtrarPokemons(tipo)}
+              className='filter-button'
+            >
+              {tipo}
+            </Button>
+          ))}
+        </div>
+        <Button
+          className='pokedex-button'
+          onClick={() => this.proximoPokemon(pokemonsFiltrados.length)}
+          disabled={pokemonsFiltrados.length <= 1}
+        >
+          Próximo Pokémon
+        </Button>
       </div>
     );
   }
