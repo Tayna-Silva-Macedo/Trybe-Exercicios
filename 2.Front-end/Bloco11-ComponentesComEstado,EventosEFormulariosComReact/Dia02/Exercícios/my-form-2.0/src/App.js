@@ -1,5 +1,7 @@
 import React from 'react';
 import Form from './Form';
+import FormDataDisplay from './FormDataDisplay';
+import FormError from './FormError';
 import './App.css';
 
 class App extends React.Component {
@@ -14,6 +16,8 @@ class App extends React.Component {
     resume: '',
     role: '',
     roleDescription: '',
+    formError: {},
+    submitted: false,
   };
 
   changeHandler = ({ target }) => {
@@ -32,7 +36,24 @@ class App extends React.Component {
   updateState = (name, value) => {
     this.setState((state) => ({
       [name]: value,
+      formError: {
+        ...state.formError,
+        [name]: this.validateField(name, value),
+      },
     }));
+  };
+
+  validateField = (fieldName, value) => {
+    switch (fieldName) {
+      case 'email':
+        const isValid = value.match(
+          /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+        );
+        return isValid ? '' : 'is invalid';
+      default:
+        break;
+    }
+    return '';
   };
 
   onBlurHandler = ({ target }) => {
@@ -43,14 +64,44 @@ class App extends React.Component {
     this.updateState(name, value);
   };
 
+  resetForm = () => {
+    this.setState({
+      name: '',
+      email: '',
+      cpf: '',
+      address: '',
+      city: '',
+      countryState: '',
+      addressType: '',
+      resume: '',
+      role: '',
+      roleDescription: '',
+      formError: {},
+      submitted: false,
+    });
+  };
+
+  sendForm = (event) => {
+    event.preventDefault();
+    this.setState({ submitted: true });
+  };
+
   render() {
+    const { submitted } = this.state;
+
     return (
       <main>
         <Form
           changeHandler={this.changeHandler}
           onBlurHandler={this.onBlurHandler}
           currentState={this.state}
+          sendForm={this.sendForm}
+          resetForm={this.resetForm}
         />
+        <div className='container'>
+          <FormError formError={this.state.formError} />
+        </div>
+        {submitted && <FormDataDisplay currentState={this.state} />}
       </main>
     );
   }

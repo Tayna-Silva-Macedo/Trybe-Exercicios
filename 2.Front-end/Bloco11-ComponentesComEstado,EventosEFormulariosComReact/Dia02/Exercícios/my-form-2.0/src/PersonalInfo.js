@@ -133,7 +133,7 @@ class PersonalInfo extends React.Component {
               type='radio'
               name='addressType'
               id='house'
-              value='house'
+              value='Casa'
               required
               onChange={changeHandler}
             />
@@ -145,7 +145,7 @@ class PersonalInfo extends React.Component {
               type='radio'
               name='addressType'
               id='apart'
-              value='apartment'
+              value='Apartamento'
               required
               onChange={changeHandler}
             />

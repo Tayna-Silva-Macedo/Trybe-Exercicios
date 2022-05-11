@@ -30,10 +30,10 @@ class ProfessionalInfo extends React.Component {
               id='role'
               maxLength='40'
               required
+              onChange={changeHandler}
               onMouseEnter={() => {
                 alert('Preencha com cuidado esta informação.');
               }}
-              onChange={changeHandler}
             />
           </label>
         </div>
