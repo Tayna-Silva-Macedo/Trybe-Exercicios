@@ -1,9 +1,10 @@
 import React from 'react';
 
+let primeiraVez = true;
+
 class ProfessionalInfo extends React.Component {
   render() {
     const { changeHandler } = this.props;
-    let primeiraVez = true;
 
     return (
       <fieldset>
