@@ -36,7 +36,7 @@ class PersonalInfo extends React.Component {
 
     return (
       <fieldset>
-        <legend>Dados pessoais</legend>
+        <legend>Dados pessoais:</legend>
         <div className='container'>
           <label htmlFor='name'>
             Nome:
