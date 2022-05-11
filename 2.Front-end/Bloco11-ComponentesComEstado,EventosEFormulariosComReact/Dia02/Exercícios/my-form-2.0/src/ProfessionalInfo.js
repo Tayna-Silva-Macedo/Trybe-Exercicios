@@ -4,7 +4,7 @@ let primeiraVez = true;
 
 class ProfessionalInfo extends React.Component {
   render() {
-    const { changeHandler } = this.props;
+    const { changeHandler, currentState } = this.props;
 
     return (
       <fieldset>
@@ -17,6 +17,7 @@ class ProfessionalInfo extends React.Component {
               name='resume'
               id='resume'
               maxLength='1000'
+              value={currentState.resume}
               required
               onChange={changeHandler}
             />
@@ -31,6 +32,7 @@ class ProfessionalInfo extends React.Component {
               name='role'
               id='role'
               maxLength='40'
+              value={currentState.role}
               required
               onChange={changeHandler}
               onMouseEnter={() => {
@@ -50,6 +52,7 @@ class ProfessionalInfo extends React.Component {
               name='roleDescription'
               id='roleDescription'
               maxLength='500'
+              value={currentState.roleDescription}
               required
               onChange={changeHandler}
             />

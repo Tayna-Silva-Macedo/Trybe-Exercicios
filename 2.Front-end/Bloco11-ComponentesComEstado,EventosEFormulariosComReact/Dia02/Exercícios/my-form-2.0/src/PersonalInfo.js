@@ -45,6 +45,7 @@ class PersonalInfo extends React.Component {
               name='name'
               id='name'
               maxLength='40'
+              value={currentState.name}
               required
               onChange={changeHandler}
             />
@@ -59,6 +60,7 @@ class PersonalInfo extends React.Component {
               name='email'
               id='email'
               maxLength='50'
+              value={currentState.email}
               required
               onChange={changeHandler}
             />
@@ -73,6 +75,7 @@ class PersonalInfo extends React.Component {
               name='cpf'
               id='cpf'
               maxLength='11'
+              value={currentState.cpf}
               required
               onChange={changeHandler}
             />
@@ -87,6 +90,7 @@ class PersonalInfo extends React.Component {
               name='address'
               id='address'
               maxLength='200'
+              value={currentState.address}
               required
               onChange={changeHandler}
             />
@@ -101,9 +105,9 @@ class PersonalInfo extends React.Component {
               name='city'
               id='city'
               maxLength='28'
+              value={currentState.city}
               required
               onChange={changeHandler}
-              value={currentState.city}
               onBlur={onBlurHandler}
             />
           </label>
@@ -115,13 +119,13 @@ class PersonalInfo extends React.Component {
             <select
               name='countryState'
               id='countryState'
+              value={currentState.countryState}
               required
               onChange={changeHandler}
-              defaultValue=''
             >
               <option value=''>Selecione</option>
               {states.map((state) => (
-                <option key={state}>{state}</option>
+                <option key={state} value={state}>{state}</option>
               ))}
             </select>
           </label>

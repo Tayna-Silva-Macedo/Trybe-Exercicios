@@ -15,7 +15,10 @@ class Form extends React.Component {
           currentState={currentState}
         />
 
-        <ProfessionalInfo changeHandler={changeHandler} />
+        <ProfessionalInfo
+          changeHandler={changeHandler}
+          currentState={currentState}
+        />
 
         <button type='submit' onClick={sendForm}>
           Enviar
