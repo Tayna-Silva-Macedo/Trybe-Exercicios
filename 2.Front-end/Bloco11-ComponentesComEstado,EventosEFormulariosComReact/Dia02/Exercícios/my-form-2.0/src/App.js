@@ -11,6 +11,9 @@ class App extends React.Component {
     city: '',
     countryState: '',
     addressType: '',
+    resume: '',
+    role: '',
+    roleDescription: '',
   };
 
   changeHandler = ({ target }) => {

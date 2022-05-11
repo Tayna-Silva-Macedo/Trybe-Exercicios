@@ -14,7 +14,7 @@ class Form extends React.Component {
           currentState={currentState}
         />
 
-        <ProfessionalInfo />
+        <ProfessionalInfo changeHandler={changeHandler} />
       </form>
     );
   }
