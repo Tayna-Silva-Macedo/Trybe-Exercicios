@@ -1,4 +1,3 @@
-// src/components/Profile.js
 import React from 'react';
 
 class Profile extends React.Component {
@@ -13,11 +12,20 @@ class Profile extends React.Component {
   }
 
   async componentDidMount() {
-    // 💡 não se esqueça de mim!
+    const myuser = 'Tayna-Silva-Macedo';
+    try {
+      const url = `https://api.github.com/users/${myuser}`;
+      const response = await fetch(url);
+      const dataJson = await response.json();
+
+      this.setState({ api: dataJson });
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   componentWillUnmount() {
-    // 💡 eu também quero um código!
+    alert('Você ocultou seu perfil');
   }
 
   changeDataJson(dataJson) {

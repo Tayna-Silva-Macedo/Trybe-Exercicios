@@ -21,11 +21,19 @@ class Connections extends React.Component {
   }
 
   shouldComponentUpdate(_nextProps, { list }) {
-    // 💡 o que será que vai aqui?
+    const maxContactsNumber = 3;
+
+    return list.length <= maxContactsNumber;
   }
 
   componentDidUpdate(_prevProps, prevState) {
-    // 💡 tá meio vazio esse método, não?
+    const { list } = this.state;
+
+    if (prevState.list.length < list.length) {
+      this.changeToBlue();
+    } else if (prevState.list.length > list.length) {
+      this.changeToCoral();
+    }
   }
 
   handleChange({ target: { value } }) {
