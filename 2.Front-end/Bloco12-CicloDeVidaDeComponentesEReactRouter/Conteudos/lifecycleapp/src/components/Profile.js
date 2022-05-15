@@ -17,8 +17,9 @@ class Profile extends React.Component {
       const url = `https://api.github.com/users/${myuser}`;
       const response = await fetch(url);
       const dataJson = await response.json();
+      
+      this.changeDataJson(dataJson);
 
-      this.setState({ api: dataJson });
     } catch (error) {
       console.log(error);
     }
