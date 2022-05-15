@@ -32,7 +32,6 @@ class PersonDetails extends React.Component {
   }
 
   getUserElements = (user) => {
-    console.log(user.picture.thumbnail);
     return {
       name: `${user.name.first} ${user.name.last}`,
       email: user.email,
