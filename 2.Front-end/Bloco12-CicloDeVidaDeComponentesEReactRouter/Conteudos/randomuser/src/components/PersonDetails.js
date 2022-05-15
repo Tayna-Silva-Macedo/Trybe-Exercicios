@@ -42,14 +42,19 @@ class PersonDetails extends React.Component {
 
   render() {
     const { person, loading } = this.state;
-    if (loading) return <Loading />;
 
     return (
-      <div>
-        {person.map((person, index) => (
-          <PersonCard key={index} person={this.getUserElements(person)} />
-        ))}
-      </div>
+      <>
+        {loading ? (
+          <Loading />
+        ) : (
+          <div>
+            {person.map((person, index) => (
+              <PersonCard key={index} person={this.getUserElements(person)} />
+            ))}
+          </div>
+        )}
+      </>
     );
   }
 }
