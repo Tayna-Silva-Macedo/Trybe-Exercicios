@@ -76,3 +76,28 @@ describe('Exercício 4', () => {
     expect(service.upperCase('tayna')).toBe('TAYNA');
   });
 });
+
+describe('Exercício 5', () => {
+  service.fetchDogPictures = jest.fn();
+  afterEach(service.fetchDogPictures.mockReset);
+
+  test('Testa requisição caso a promise resolva', async () => {
+    service.fetchDogPictures.mockResolvedValue('request sucess');
+
+    service.fetchDogPictures();
+    expect(service.fetchDogPictures).toHaveBeenCalled();
+    expect(service.fetchDogPictures).toHaveBeenCalledTimes(1);
+    await expect(service.fetchDogPictures()).resolves.toBe('request sucess');
+    expect(service.fetchDogPictures).toHaveBeenCalledTimes(2);    
+  });
+
+  test('Testa requisição caso a promise seja rejeitada', async () => {
+    service.fetchDogPictures.mockRejectedValue('request failed');
+
+    expect(service.fetchDogPictures).toHaveBeenCalledTimes(0);
+    await expect(service.fetchDogPictures()).rejects.toMatch('request failed');
+    expect(service.fetchDogPictures).toHaveBeenCalledTimes(1);  
+    
+  });
+});
+

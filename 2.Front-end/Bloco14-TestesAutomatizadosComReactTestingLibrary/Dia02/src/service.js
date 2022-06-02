@@ -6,4 +6,10 @@ firstLetter = (string) => string[0];
 
 concatStrings = (string1, string2) => string1 + string2;
 
-module.exports = { randomNumber, upperCase, firstLetter, concatStrings };
+fetchDogPictures = async () => {
+  const response = await fetch("https://dog.ceo/api/breeds/image/random");
+  const responseJson = await response.json();
+  return responseJson;
+}
+
+module.exports = { randomNumber, upperCase, firstLetter, concatStrings, fetchDogPictures };
