@@ -66,7 +66,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 9-3: Jest - Testes Assíncronos
 - [x] 9-4: Projeto - Carrinho de Compras
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :heavy_check_mark:
 #### Bloco 10: Introdução à React
 - [x] 10-1: Introdução - Front-end
 - [x] 10-1: Introdução - React
@@ -97,14 +97,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 15-5: Testes em React - Redux
 - [x] 15-6: Projeto - Trybe Wallet
 #### Bloco 16:
-- [ ] 16-1: Projeto - Jogo de Trivia
+- [x] 16-1: Projeto - Jogo de Trivia
 #### Bloco 17:
-- [ ] 17-1: Context API do React
-- [ ] 17-2: React Hooks - useState e useContext
-- [ ] 17-3: React Hooks - useEffect e Hooks
-- [ ] 17-4: Projeto - StarWars Datatable com Context API e Hooks
+- [x] 17-1: Context API do React
+- [x] 17-2: React Hooks - useState e useContext
+- [x] 17-3: React Hooks - useEffect e Hooks
+- [x] 17-4: Projeto - StarWars Datatable com Context API e Hooks
 #### Bloco 18: Projeto App de Receitas
-- [ ] 18-1: App de Receitas
+- [x] 18-1: App de Receitas
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 #### Bloco 19: Docker: Utilizando Containers
