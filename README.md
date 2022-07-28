@@ -108,8 +108,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 #### Bloco 19: Docker: Utilizando Containers
-- [ ] 19-1: Introdução - Back-end
-- [ ] 19-1: Utilizando Containers - Docker
+- [x] 19-1: Introdução - Back-end
+- [x] 19-1: Utilizando Containers - Docker
 - [ ] 19-2: Manipulação e Criação de Imagens no Docker
 - [ ] 19-3: Orquestrando Containers com Docker Compose
 - [ ] 19-4: Projeto - Docker Todo-List
