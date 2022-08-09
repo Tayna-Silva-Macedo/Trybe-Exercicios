@@ -175,13 +175,15 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 29-4: Updates Simples
 - [ ] 29-5: Updates Complexos - Arrays
 - [ ] 29-6: Projeto - Commerce
-#### Bloco 30: 
-
-#### Bloco 31: MasterClass - VPS, CI/CD
-- [ ] 31-1: Dia 1
+#### Bloco 30: MongoDB com Node.js e POO
+- [ ] 30-1: Mongoose e arquitetura MSC(camada Model)
+- [ ] 30-2: Mongoose e arquitetura MSC(camada Service e Controller)
+- [ ] 30-3: Projeto - Car Shop
+#### Bloco 31: Projeto - App de Delivery
+- [ ] 31-1: Projeto - App de Delivery
+#### Bloco 32: MasterClass - VPS, CI/CD
+- [ ] 31-1: Dia 1 - VPS
 - [ ] 31-2: Dia 2
-#### Bloco 32: Projeto - App de Delivery
-- [ ] 32-1: Projeto - App de Delivery
 
 ## Ciência da Computação :hourglass_flowing_sand:
 #### Bloco 33: Introdução à Python
