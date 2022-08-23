@@ -12,8 +12,16 @@ app.get('/chocolates', async (req, res) => {
 app.get('/chocolates/total', async (req, res) => {
   const chocolates = await cacaoTrybe.getAllChocolates();
 
-  res.status(200).json({ totalChocolates: chocolates.length })
-})
+  res.status(200).json({ totalChocolates: chocolates.length });
+});
+
+app.get('/chocolates/search', async (req, res) => {
+  const { name } = req.query;
+
+  const chocolates = await cacaoTrybe.getChocolateByName(name);
+
+  res.status(chocolates.length === 0 ? 404 : 200).json(chocolates);
+});
 
 app.get('/chocolates/:id', async (req, res) => {
   const { id } = req.params;
