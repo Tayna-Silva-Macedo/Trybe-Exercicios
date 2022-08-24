@@ -20,4 +20,62 @@ router.post('/', async (req, res) => {
   }
 });
 
+router.get('/', async (req, res) => {
+  try {
+    const [result] = await peopleDB.findAll();
+    res.status(200).json(result);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: error.sqlMessage });
+  }
+});
+
+router.get('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const [[result]] = await peopleDB.findById(id);
+    if (result) {
+      res.status(200).json(result);
+    } else {
+      res.status(404).json({ message: 'Pessoa não encontrada' });
+    }
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: error.sqlMessage });
+  }
+});
+
+router.put('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const person = req.body;
+    const [result] = await peopleDB.update(person, id);
+    if (result.affectedRows > 0) {
+      res
+        .status(200)
+        .json({ message: `Pessoa de id ${id} atualizada com sucesso` });
+    } else {
+      res.status(404).json({ message: `Pessoa não encontrada` });
+    }
+  } catch (error) {
+    res.status(500).json({ message: error.sqlMessage });
+  }
+});
+
+router.delete('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const [result] = await peopleDB.remove(id);
+    if (result.affectedRows > 0) {
+      res
+        .status(200)
+        .json({ message: `Pessoa de id ${id} excluída com sucesso` });
+    } else {
+      res.status(404).json({ message: 'Pessoa não encontrada' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: error.sqlMessage });
+  }
+});
+
 module.exports = router;
