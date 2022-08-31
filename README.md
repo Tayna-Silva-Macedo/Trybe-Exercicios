@@ -132,7 +132,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 22-3: Node.js - Testes de Integração
 - [x] 22-4: Express - Middlewares
 - [x] 22-5: Node.js - Express e Mysql
-- [ ] 22-6: Atividades + Projeto - Talker Manager
+- [x] 22-6: Atividades + Projeto - Talker Manager
 #### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 - [ ] 23-1: Introdução - Arquitetura de Software
 - [ ] 23-1: Arquitetura de Software - Camada de Model
