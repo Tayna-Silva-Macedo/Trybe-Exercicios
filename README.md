@@ -133,19 +133,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 22-4: Express - Middlewares
 - [x] 22-5: Node.js - Express e Mysql
 - [x] 22-6: Atividades + Projeto - Talker Manager
-#### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
-- [ ] 23-1: Introdução - Arquitetura de Software
-- [ ] 23-1: Arquitetura de Software - Camada de Model
-- [ ] 23-2: Arquitetura de Software - Camada de Controller e Service
-- [ ] 23-3: Arquitetura Web - Rest e Restful
-- [ ] 23-4: Arquitetura de Software - Testando as Camadas 
-- [ ] 23-5: Projeto - Store Manager
+#### Bloco 23: Arquitetura de Software: Model, Service e Controller
+- [x] 23-1: Introdução - Arquitetura de Software
+- [x] 23-1: Arquitetura de Software: Camada Model
+- [x] 23-2: Arquitetura de Software: Camada Service
+- [x] 23-3: Arquitetura de Software: Camada Controller
+- [x] 23-4: Projeto - Store Manager
 #### Bloco 24: Node.js: ORM e Autenticação
 - [ ] 24-1: Introdução - Node.js: ORM e Autenticação
 - [ ] 24-1: ORM - Interface da aplicação com o banco de dados
-- [ ] 24-2: ORM - Associations
-- [ ] 24-3: JWT - (JSON Web Token)
-- [ ] 24-4: Testando APIs com Testes de Integração
+- [ ] 24-2: ORM - Associations 1:1 e 1:N
+- [ ] 24-3: ORM - Associations N:N e Transactions
+- [ ] 24-4: JWT - (JSON Web Token)
 - [ ] 24-5: Projeto - API de Blogs
 #### Bloco 25: Deployment
 - [ ] 25-1: Introdução - Deploy
