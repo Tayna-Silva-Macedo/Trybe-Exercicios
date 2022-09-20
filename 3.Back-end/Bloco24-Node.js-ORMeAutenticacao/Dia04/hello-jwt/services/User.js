@@ -3,8 +3,10 @@ const model = require('../models/User');
 
 const { JWT_SECRET } = process.env;
 
-const login = async (username, password, admin = false) => {
-  if (username === 'admin' && password !== 's3nh4S3gur4???') {
+const login = async (username, password) => {
+  const user = await model.findOne(username);
+
+  if (!user || user.password !== password) {
     return {
       error: {
         message: 'Invalid username or password',
@@ -13,11 +15,9 @@ const login = async (username, password, admin = false) => {
     };
   }
 
-  const isAdmin = admin || (username === 'admin' && password === 's3nh4S3gur4???');
-
   const payload = {
     username,
-    admin: isAdmin,
+    admin: user.admin,
   };
 
   const token = jwt.sign(payload, JWT_SECRET, {
@@ -43,7 +43,7 @@ const create = async (username, password) => {
 
   await model.create(username, password, admin);
 
-  return login(username, password, admin);
+  return login(username, password);
 };
 
 module.exports = {
