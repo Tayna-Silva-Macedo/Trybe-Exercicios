@@ -1,1 +1,32 @@
-[{"username":"MariaCeciliaSouza92","password":"%9!%e'c0c5w,q%%h9n3k","admin":false}]
+[
+  {
+    "username": "taynasm",
+    "password": "taynasm1996",
+    "admin": true
+  },
+  {
+    "username": "cdvania",
+    "password": "vania1971",
+    "admin": true
+  },
+  {
+    "username": "pereira1962",
+    "password": "vanpe",
+    "admin": true
+  },
+  {
+    "username": "nathansm",
+    "password": "nathansm2000",
+    "admin": false
+  },
+  {
+    "username": "jessicasantana",
+    "password": "melhorpessoa",
+    "admin": true
+  },
+  {
+    "username": "tryber",
+    "password": "tryber123456",
+    "admin": false
+  }
+]

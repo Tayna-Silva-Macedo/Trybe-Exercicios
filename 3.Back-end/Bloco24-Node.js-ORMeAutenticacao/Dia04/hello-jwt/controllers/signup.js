@@ -1,23 +1,17 @@
-const { validateCredentials } = require('./utils/validateCredentials');
+const service = require('../services/user');
 
-const service = require('../services/User');
-
-module.exports = async (req, res, next) => {
-  const { error: validationError } = validateCredentials(req.body);
-
-  if (validationError) {
-    return next(validationError);
-  }
-
+const signup = async (req, res, next) => {
   const { username, password } = req.body;
 
-  const result = await service.create(username, password);
+  const { error, token } = await service.create({ username, password });
 
-  if (!result.error) {
-    return res.status(201).json(result);
+  if (error && error.type === 'usernameExists') {
+    const err = new Error(error.message);
+    err.statusCode = 409;
+    return next(err);
   }
 
-  if (result.error.code === 'usernameExists') {
-    return res.status(409).json({ message: result.error.message });
-  }
+  return res.status(201).json({ token });
 };
+
+module.exports = signup;

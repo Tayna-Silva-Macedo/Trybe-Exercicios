@@ -1,17 +1,13 @@
-module.exports = (req, res, next) => {
-  const { user } = req;
+const admin = (req, res, next) => {
+  const { admin: isAdmin } = req.user;
 
-  if (!user) {
-    const err = new Error('This endpoint requires authentication');
-    err.statusCode = 401;
-    return next(err);
-  }
-
-  if (!user.admin) {
-    const err = new Error('Restricted access');
+  if (!isAdmin) {
+    const err = new Error('Restricted acess');
     err.statusCode = 403;
     return next(err);
   }
 
   return next();
 };
+
+module.exports = admin;

@@ -1,26 +1,45 @@
-const path = require('path');
 const fs = require('fs').promises;
+const path = require('path');
 
 const DATA_PATH = path.join(__dirname, 'data', 'users.json');
 
-const getAll = async () => fs.readFile(DATA_PATH, 'utf-8').then(JSON.parse);
+const readUsers = async () => {
+  try {
+    const contentFile = await fs.readFile(DATA_PATH, 'utf-8');
 
-const writeAll = async (content) =>
-  fs.writeFile(DATA_PATH, JSON.stringify(content));
+    return JSON.parse(contentFile);
+  } catch (error) {
+    return null;
+  }
+};
 
-const findOne = (username) =>
-  getAll().then((users) => users.find((user) => user.username === username));
+const setUsers = async (user) => {
+  await fs.writeFile(DATA_PATH, JSON.stringify(user));
+};
 
-const create = (username, password, admin) =>
-  getAll()
-    .then((users) => {
-      users.push({ username, password, admin });
-      return users;
-    })
-    .then(writeAll);
+const getAll = async () => {
+  const users = await readUsers();
+
+  return users;
+};
+
+const findByUsername = async (username) => {
+  const users = await getAll();
+  const userFind = users.find((user) => user.username === username);
+
+  return userFind;
+};
+
+const create = async (newUser, admin) => {
+  const users = await getAll();
+
+  const newUsersFile = [...users, { ...newUser, admin }];
+
+  await setUsers(newUsersFile);
+};
 
 module.exports = {
   getAll,
-  findOne,
+  findByUsername,
   create,
 };

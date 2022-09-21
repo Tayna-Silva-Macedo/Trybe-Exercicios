@@ -22,7 +22,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/ping', controllers.ping);
-app.post('/login', controllers.login);
+
+app.post('/login', middlewares.bodyValidation, controllers.user);
 app.get('/users/me', middlewares.auth, controllers.me);
 app.get(
   '/top-secret',
@@ -30,7 +31,7 @@ app.get(
   middlewares.admin,
   controllers.topSecret,
 );
-app.post('/signup', controllers.signup);
+app.post('/signup', middlewares.bodyValidation, controllers.signup);
 
 app.use(middlewares.error);
 

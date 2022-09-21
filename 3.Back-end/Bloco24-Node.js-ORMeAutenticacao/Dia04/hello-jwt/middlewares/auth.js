@@ -1,22 +1,24 @@
-const jwt = require('jsonwebtoken');
+const tokenHelper = require('../helpers/token');
 
-const { JWT_SECRET } = process.env;
+const auth = (req, res, next) => {
+  const { authorization } = req.headers;
 
-module.exports = (req, res, next) => {
-  const token = req.headers.authorization;
-
-  if (!token) {
+  if (!authorization) {
     const err = new Error('Token not found');
     err.statusCode = 401;
     return next(err);
   }
 
   try {
-    const payload = jwt.verify(token, JWT_SECRET);
+    const payload = tokenHelper.verify(authorization);
+
     req.user = payload;
+
     return next();
   } catch (err) {
     err.statusCode = 401;
     return next(err);
   }
 };
+
+module.exports = auth;

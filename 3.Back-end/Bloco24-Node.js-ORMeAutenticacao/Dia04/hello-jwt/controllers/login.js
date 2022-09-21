@@ -1,25 +1,17 @@
-const service = require('../services/User');
-const { validateCredentials } = require('./utils/validateCredentials');
+const services = require('../services/user');
 
-module.exports = async (req, res, next) => {
-  const { error } = validateCredentials(req.body);
-
-  if (error) return next(error);
-
+const login = async (req, res, next) => {
   const { username, password } = req.body;
 
-  const { error: serviceError, token } = await service.login(
-    username,
-    password,
-  );
+  const { error, token } = await services.login(username, password);
 
-  if (serviceError && serviceError.code === 'invalidCredentials') {
-    return next({ statusCode: 401, message: serviceError.message });
+  if (error && error.type === 'invalidCredentials') {
+    const err = new Error(error.message);
+    err.statusCode = 404;
+    return next(err);
   }
 
-  if (serviceError) {
-    return next(serviceError);
-  }
-
-  res.status(200).json({ token });
+  return res.status(200).json({ token });
 };
+
+module.exports = login;

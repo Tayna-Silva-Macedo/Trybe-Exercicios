@@ -1,16 +1,14 @@
-const jwt = require('jsonwebtoken');
+const tokenHelper = require('../helpers/token');
 const model = require('../models/User');
 
-const { JWT_SECRET } = process.env;
-
 const login = async (username, password) => {
-  const user = await model.findOne(username);
+  const user = await model.findByUsername(username);
 
   if (!user || user.password !== password) {
     return {
       error: {
         message: 'Invalid username or password',
-        code: 'invalidCredentials',
+        type: 'invalidCredentials',
       },
     };
   }
@@ -20,28 +18,26 @@ const login = async (username, password) => {
     admin: user.admin,
   };
 
-  const token = jwt.sign(payload, JWT_SECRET, {
-    expiresIn: '1h',
-  });
+  const token = tokenHelper.create(payload);
 
   return { token };
 };
 
-const create = async (username, password) => {
-  const userExists = await model.findOne(username);
+const create = async ({ username, password }) => {
+  const userExists = await model.findByUsername(username);
 
   if (userExists) {
     return {
       error: {
-        message: 'Username already exists',
-        code: 'usernameExists',
+        message: 'user already exists',
+        type: 'usernameExists',
       },
     };
   }
 
   const admin = Math.floor(Math.random() * 100) > 50;
 
-  await model.create(username, password, admin);
+  await model.create({ username, password }, admin);
 
   return login(username, password);
 };
