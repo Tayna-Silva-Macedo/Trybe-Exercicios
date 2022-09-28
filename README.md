@@ -145,10 +145,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 24-2: ORM - Associations 1:1 e 1:N
 - [x] 24-3: ORM - Associations N:N e Transactions
 - [x] 24-4: JWT - (JSON Web Token)
-- [ ] 24-5: Projeto - API de Blogs
+- [x] 24-5: Projeto - API de Blogs
 #### Bloco 25: Deployment
-- [ ] 25-1: Introdução - Deploy
-- [ ] 25-1: Infraestrutura - Deploy com Heroku
+- [x] 25-1: Infraestrutura - Deploy com Heroku
 - [ ] 25-2: Deploy Docker & Heroku
 - [ ] 25-3: Projeto - Stranger Things
 #### Bloco 26: TypeScript
