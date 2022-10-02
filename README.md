@@ -148,10 +148,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 24-5: Projeto - API de Blogs
 #### Bloco 25: Deployment
 - [x] 25-1: Infraestrutura - Deploy com Heroku
-- [ ] 25-2: Deploy Docker & Heroku
-- [ ] 25-3: Projeto - Stranger Things
-#### Bloco 26: TypeScript
-- [ ] 26-1: Introdução - TypeScript
+- [x] 25-2: Deploy Docker & Heroku
+- [x] 25-3: Projeto - Stranger Things
+#### Bloco 26: Introdução a TypeScript
 - [ ] 26-1: Introdução ao TypeScript
 - [ ] 26-2: Tipagem Estática e Generics
 - [ ] 26-3: Express com TypeScript
