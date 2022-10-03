@@ -1,3 +1,5 @@
+import readline from 'readline-sync';
+
 const unitsVolumes: string[] = [
   'km³',
   'hm³',
@@ -22,6 +24,23 @@ const convertVolume = (
   } ${finalUnit}`;
 };
 
-console.log(convertVolume(1, 'km³', 'm³'));
-console.log(convertVolume(1, 'm³', 'km³'));
-console.log(convertVolume(3, 'dm³', 'hm³'));
+const execVolume = (): void => {
+  const value = readline.questionFloat('Digite o valor a ser convertido: ');
+  const initialUnitIndex = readline.keyInSelect(
+    unitsVolumes,
+    'Escolha a unidade base: '
+  );
+  const finalUnitIndex = readline.keyInSelect(
+    unitsVolumes,
+    'Escolha a unidade para conversão: '
+  );
+
+  const initialUnit = unitsVolumes[initialUnitIndex];
+  const finalUnit = unitsVolumes[finalUnitIndex];
+
+  const result = convertVolume(value, initialUnit, finalUnit);
+
+  console.log(result);
+};
+
+execVolume();

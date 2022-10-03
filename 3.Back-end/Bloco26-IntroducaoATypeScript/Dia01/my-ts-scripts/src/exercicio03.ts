@@ -1,3 +1,5 @@
+import readline from 'readline-sync';
+
 const unitsMass: string[] = ['kg', 'hg', 'dag', 'g', 'dg', 'cg', 'mg'];
 
 const convertMass = (
@@ -9,9 +11,28 @@ const convertMass = (
   const finalIndex = unitsMass.indexOf(finalUnit);
   const exponent = finalIndex - initialIndex;
 
-  return `${value} ${initialUnit} tem ${value * Math.pow(10, exponent)} ${finalUnit}`;
+  return `${value} ${initialUnit} tem ${
+    value * Math.pow(10, exponent)
+  } ${finalUnit}`;
 };
 
-console.log(convertMass(1, 'kg', 'g'));
-console.log(convertMass(1, 'g', 'kg'));
-console.log(convertMass(7, 'cg', 'dag'));
+const execMass = (): void => {
+  const value = readline.questionFloat('Digite o valor a ser convertido: ');
+  const initialUnitIndex = readline.keyInSelect(
+    unitsMass,
+    'Escolha a unidade base: '
+  );
+  const finalUnitIndex = readline.keyInSelect(
+    unitsMass,
+    'Escolha a unidade para conversão: '
+  );
+
+  const initialUnit = unitsMass[initialUnitIndex];
+  const finalUnit = unitsMass[finalUnitIndex];
+
+  const result = convertMass(value, initialUnit, finalUnit);
+
+  console.log(result);
+};
+
+execMass();

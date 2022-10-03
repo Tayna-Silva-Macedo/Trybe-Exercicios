@@ -1,3 +1,5 @@
+import readline from 'readline-sync';
+
 const unitsCapacity: string[] = ['kl', 'hl', 'dal', 'l', 'dl', 'cl', 'ml'];
 
 const convertCapacity = (
@@ -14,7 +16,23 @@ const convertCapacity = (
   } ${finalUnit}`;
 };
 
-console.log(convertCapacity(1, 'l', 'kl'));
-console.log(convertCapacity(1, 'kl', 'l'));
-console.log(convertCapacity(9, 'dl', 'ml'));
+const execCapacity = (): void => {
+  const value = readline.questionFloat('Digite o valor a ser convertido: ');
+  const initialUnitIndex = readline.keyInSelect(
+    unitsCapacity,
+    'Escolha a unidade base: '
+  );
+  const finalUnitIndex = readline.keyInSelect(
+    unitsCapacity,
+    'Escolha a unidade para conversão: '
+  );
 
+  const initialUnit = unitsCapacity[initialUnitIndex];
+  const finalUnit = unitsCapacity[finalUnitIndex];
+
+  const result = convertCapacity(value, initialUnit, finalUnit);
+
+  console.log(result);
+};
+
+execCapacity();

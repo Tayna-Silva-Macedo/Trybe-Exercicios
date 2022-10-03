@@ -1,3 +1,5 @@
+import readline from 'readline-sync';
+
 const unitsLength: string[] = ['km', 'hm', 'dam', 'm', 'dm', 'cm', 'mm'];
 
 const convertLength = (
@@ -14,6 +16,23 @@ const convertLength = (
   } ${finalUnit}`;
 };
 
-console.log(convertLength(1, 'km', 'm'));
-console.log(convertLength(1, 'm', 'km'));
-console.log(convertLength(5, 'cm', 'hm'));
+const execLength = (): void => {
+  const value = readline.questionFloat('Digite o valor a ser convertido: ');
+  const initialUnitIndex = readline.keyInSelect(
+    unitsLength,
+    'Escolha a unidade base: '
+  );
+  const finalUnitIndex = readline.keyInSelect(
+    unitsLength,
+    'Escolha a unidade para conversão: '
+  );
+
+  const initialUnit = unitsLength[initialUnitIndex];
+  const finalUnit = unitsLength[finalUnitIndex];
+
+  const result = convertLength(value, initialUnit, finalUnit);
+
+  console.log(result);
+};
+
+execLength();

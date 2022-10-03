@@ -1,4 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const readline_sync_1 = __importDefault(require("readline-sync"));
 const unitsVolumes = [
     'km³',
     'hm³',
@@ -14,6 +19,13 @@ const convertVolume = (value, initialUnit, finalUnit) => {
     const exponent = finalIndex - initialIndex;
     return `${value} ${initialUnit} tem ${value * Math.pow(1000, exponent)} ${finalUnit}`;
 };
-console.log(convertVolume(1, 'km³', 'm³'));
-console.log(convertVolume(1, 'm³', 'km³'));
-console.log(convertVolume(3, 'dm³', 'hm³'));
+const execVolume = () => {
+    const value = readline_sync_1.default.questionFloat('Digite o valor a ser convertido: ');
+    const initialUnitIndex = readline_sync_1.default.keyInSelect(unitsVolumes, 'Escolha a unidade base: ');
+    const finalUnitIndex = readline_sync_1.default.keyInSelect(unitsVolumes, 'Escolha a unidade para conversão: ');
+    const initialUnit = unitsVolumes[initialUnitIndex];
+    const finalUnit = unitsVolumes[finalUnitIndex];
+    const result = convertVolume(value, initialUnit, finalUnit);
+    console.log(result);
+};
+execVolume();
