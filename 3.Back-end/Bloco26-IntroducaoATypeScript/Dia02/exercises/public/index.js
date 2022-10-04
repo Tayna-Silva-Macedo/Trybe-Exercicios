@@ -29,11 +29,11 @@ gol.turn('direita');
 gol.speedDown();
 gol.stop();
 gol.speedUp();
-const calabresa = {
-    flavor: 'Calabresa',
+const mussarela = {
+    flavor: 'Mussarela',
     slices: 8,
 };
-console.log(calabresa);
+console.log(mussarela);
 const marguerita = {
     flavor: 'Marguerita',
     slices: 6,
@@ -44,3 +44,33 @@ const nutella = {
     slices: 4,
 };
 console.log(nutella);
+const calabresa = {
+    flavor: 'Calabresa',
+    slices: 6,
+};
+console.log(calabresa);
+const frango = {
+    flavor: 'Frango',
+    slices: 8,
+};
+console.log(frango);
+const pepperoni = {
+    flavor: 'Pepperoni',
+    slices: 4,
+};
+console.log(pepperoni);
+const cogumelo = {
+    flavor: 'Cogumelo',
+    slices: 8,
+};
+console.log(cogumelo);
+const palmito = {
+    flavor: 'Palmito',
+    slices: 6,
+};
+console.log(palmito);
+const goiabadaComQueijo = {
+    flavor: 'Goiabada com queijo',
+    slices: 4,
+};
+console.log(goiabadaComQueijo);
