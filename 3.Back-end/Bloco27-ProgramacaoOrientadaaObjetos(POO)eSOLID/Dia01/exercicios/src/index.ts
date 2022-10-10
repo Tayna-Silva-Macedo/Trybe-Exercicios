@@ -30,3 +30,24 @@ console.log('Valor total com desconto: ', order1.calculateTotalWithDiscount());
 const date1 = new Data(24, 5, 1996);
 
 console.log(date1);
+console.log('Dia: ', date1.day);
+console.log('Mês: ', date1.month);
+console.log('Mês por extenso: ', date1.getMonthName());
+console.log('Ano: ', date1.year);
+console.log('É ano bissexto: ', date1.isLeapYear());
+console.log(date1.format('dd/mm/aaaa'));
+console.log(date1.format('dd-mm-aaaa'));
+console.log(date1.format('aaaa/mm/dd'));
+console.log(date1.format('aaaa-mm-dd'));
+console.log(date1.format('dd de M aa'));
+console.log(date1.format('dd, M de aaaa'));
+
+const date2 = new Data(10, 10, 2022);
+
+console.log('Comparação: ', date1.compare(date2));
+
+const invalidDate = new Data(31, 2, 2021);
+
+console.log('Teste data inválida: ', invalidDate);
+
+// console.log(date1.format('a m d'));
