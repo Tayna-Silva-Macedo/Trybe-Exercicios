@@ -53,6 +53,20 @@ class Student {
     }
     this._worksGrades = value;
   }
+
+  sumGrades(): number {
+    return [...this._examsGrades, ...this._worksGrades].reduce((acc, grade) => {
+      const sum = acc + grade;
+      return sum;
+    }, 0);
+  }
+
+  calculateAverage(): number {
+    const sumGrades = this.sumGrades();
+    const numberOfGrades = this.examsGrades.length + this.worksGrades.length;
+
+    return Math.round(sumGrades / numberOfGrades);
+  }
 }
 
 export default Student;
