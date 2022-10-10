@@ -1,7 +1,10 @@
 import Student from './Student';
+
 import Client from './Client';
 import Order from './Order';
 import OrderItem from './OrderItem';
+
+import Data from './Data';
 
 const student1 = new Student('202001011', 'Maria da Silva');
 
@@ -23,3 +26,7 @@ const order1 = new Order(client1, [sandwich, juice, dessert], 'dinheiro', 0.1);
 console.log(order1);
 console.log('Valor total sem desconto: ', order1.calculateTotal());
 console.log('Valor total com desconto: ', order1.calculateTotalWithDiscount());
+
+const date1 = new Data(24, 5, 1996);
+
+console.log(date1);
