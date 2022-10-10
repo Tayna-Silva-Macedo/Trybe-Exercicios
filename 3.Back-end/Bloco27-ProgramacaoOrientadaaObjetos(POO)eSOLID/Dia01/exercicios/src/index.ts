@@ -21,3 +21,5 @@ const dessert = new OrderItem('Gelatina de Uva', 2.5);
 const order1 = new Order(client1, [sandwich, juice, dessert], 'dinheiro', 0.1);
 
 console.log(order1);
+console.log('Valor total sem desconto: ', order1.calculateTotal());
+console.log('Valor total com desconto: ', order1.calculateTotalWithDiscount());

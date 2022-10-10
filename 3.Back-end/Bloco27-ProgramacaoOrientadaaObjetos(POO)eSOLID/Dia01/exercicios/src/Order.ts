@@ -56,6 +56,17 @@ class Order {
     }
     this._discount = value;
   }
+
+  calculateTotal(): number {
+    return this.items.reduce((acc, item) => {
+      const total = acc + item.price;
+      return total;
+    }, 0);
+  }
+
+  calculateTotalWithDiscount(): number {
+    return this.calculateTotal() * (1 - this.discount);
+  }
 }
 
 export default Order;
