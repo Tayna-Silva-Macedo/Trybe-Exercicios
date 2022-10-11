@@ -157,7 +157,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 26-4: Projeto - Trybe Smith
 #### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
 - [x] 27-1: Introdução à Orientação a Objetos
-- [ ] 27-2: Heranças e Interfaces
+- [x] 27-2: Heranças e Interfaces
 - [ ] 27-3: Polimorfismo
 - [ ] 27-4: SOLID - Introdução e Princípios S, O e D
 - [ ] 27-5: SOLID - Princípios L e I
