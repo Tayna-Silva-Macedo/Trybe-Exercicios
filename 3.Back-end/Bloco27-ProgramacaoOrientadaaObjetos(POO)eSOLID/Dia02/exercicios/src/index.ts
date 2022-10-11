@@ -71,5 +71,3 @@ console.log(lucio);
 
 // const invalidTeacherSalary = new Teacher('Marta da Silva', new Date('1980/03/30'), -2000, math);
 // marta.admissionDate = new Date('2023/10/11');
-
-
