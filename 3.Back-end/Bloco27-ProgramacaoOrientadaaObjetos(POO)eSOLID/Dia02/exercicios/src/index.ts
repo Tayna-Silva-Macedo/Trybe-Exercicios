@@ -1,4 +1,5 @@
-import Person from "./Person";
+import IEmployee from './IEmployee';
+import Person from './Person';
 import Student from './Student';
 
 const tayna = new Person('Tayná Silva Macêdo', new Date('1996/05/24'));
@@ -26,3 +27,21 @@ console.log(lucas);
 console.log(jessica);
 console.log(tamires);
 console.log(fernando);
+
+const testInterfaceEmployee: IEmployee = {
+  registration: 'FNC1234567891011',
+  salary: 1200.0,
+  admissionDate: new Date(),
+
+  generateRegistration(): string {
+    const randomStr = String(Date.now() * (Math.random() + 1)).replace(
+      /\W/g,
+      ''
+    );
+
+    return `FNC${randomStr}`;
+  },
+};
+
+console.log(testInterfaceEmployee);
+
