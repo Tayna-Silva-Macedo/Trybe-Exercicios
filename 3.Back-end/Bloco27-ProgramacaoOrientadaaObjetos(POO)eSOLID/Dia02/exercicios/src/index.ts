@@ -1,6 +1,7 @@
 import IEmployee from './IEmployee';
 import Person from './Person';
 import Student from './Student';
+import Subject from './Subject';
 
 const tayna = new Person('Tayná Silva Macêdo', new Date('1996/05/24'));
 const vania = new Person('Vânia Maria da Silva Macêdo', new Date('1971/05/29'));
@@ -44,4 +45,14 @@ const testInterfaceEmployee: IEmployee = {
 };
 
 console.log(testInterfaceEmployee);
+
+const math = new Subject('Matemática');
+const history = new Subject('História');
+const philosophy = new Subject('Filosofia');
+
+console.log(math);
+console.log(history);
+console.log(philosophy);
+
+
 
