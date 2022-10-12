@@ -19,7 +19,7 @@ export default class MockedDbModel implements IModel {
 
   async getAll() {
     return [
-      { id: 1, name: 'Samus', specialMove: 'CHarge Shot' },
+      { id: 1, name: 'Samus', specialMove: 'Charge Shot' },
       { id: 2, name: 'Kirby', specialMove: 'Inhale' },
     ];
   }
