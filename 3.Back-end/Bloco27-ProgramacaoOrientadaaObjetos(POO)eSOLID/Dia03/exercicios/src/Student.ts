@@ -1,16 +1,15 @@
+import EvaluationResult from './EvaluationResult';
 import IEnrollable from './interfaces/IEnrollable';
 import Person from './Person';
 
 export default class Student extends Person implements IEnrollable {
   private _enrollment: string;
-  private _examsGrades: number[];
-  private _worksGrades: number[];
+  private _evaluationsResults: EvaluationResult[];
 
   constructor(name: string, birthDate: Date) {
     super(name, birthDate);
     this._enrollment = this.generateEnrollment();
-    this._examsGrades = [];
-    this._worksGrades = [];
+    this._evaluationsResults = [];
   }
 
   get enrollment(): string {
@@ -23,40 +22,20 @@ export default class Student extends Person implements IEnrollable {
     this._enrollment = value;
   }
 
-  get examsGrades(): number[] {
-    return this._examsGrades;
-  }
-
-  set examsGrades(value: number[]) {
-    if (value.length > 4) {
-      throw new Error('A pessoa estudante só pode possuir 4 notas de provas.');
-    }
-    this._examsGrades = value;
-  }
-
-  get worksGrades(): number[] {
-    return this._worksGrades;
-  }
-
-  set worksGrades(value: number[]) {
-    if (value.length > 2) {
-      throw new Error(
-        'A pessoa estudante só pode possuir 2 notas de trabalhos.'
-      );
-    }
-    this._worksGrades = value;
+  get evaluationsResults(): EvaluationResult[] {
+    return this._evaluationsResults;
   }
 
   sumGrades(): number {
-    return [...this._examsGrades, ...this._worksGrades].reduce((acc, grade) => {
-      const sum = acc + grade;
-      return sum;
-    }, 0);
+    return [...this._evaluationsResults].reduce(
+      (acc, note) => note.score + acc,
+      0
+    );
   }
 
   calculateAverage(): number {
     const sumGrades = this.sumGrades();
-    const numberOfGrades = this.examsGrades.length + this.worksGrades.length;
+    const numberOfGrades = this._evaluationsResults.length;
 
     return Math.round(sumGrades / numberOfGrades);
   }
@@ -68,5 +47,9 @@ export default class Student extends Person implements IEnrollable {
     );
 
     return `STU${randomStr}`;
+  }
+
+  addEvaluationResult(value: EvaluationResult): void {
+    this._evaluationsResults.push(value);
   }
 }
