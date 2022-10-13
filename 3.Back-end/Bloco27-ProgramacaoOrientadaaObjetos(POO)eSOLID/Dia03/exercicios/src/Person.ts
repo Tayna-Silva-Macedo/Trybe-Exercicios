@@ -1,13 +1,7 @@
-export default class Person {
-  private _name: string;
-  private _birthDate: Date;
-
-  constructor(name: string, birthDate: Date) {
-    this.validateName(name);
-    this.validateBirthDate(birthDate);
-
-    this._name = name;
-    this._birthDate = birthDate;
+export default abstract class Person {
+  constructor(private _name: string, private _birthDate: Date) {
+    this.name = _name;
+    this.birthDate = _birthDate;
   }
 
   get name(): string {

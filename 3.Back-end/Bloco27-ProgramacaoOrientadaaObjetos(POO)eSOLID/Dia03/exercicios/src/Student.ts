@@ -1,13 +1,14 @@
+import IEnrollable from './interfaces/IEnrollable';
 import Person from './Person';
 
-export default class Student extends Person {
+export default class Student extends Person implements IEnrollable {
   private _enrollment: string;
   private _examsGrades: number[];
   private _worksGrades: number[];
 
   constructor(name: string, birthDate: Date) {
     super(name, birthDate);
-    this._enrollment = Student.generateEnrollment();
+    this._enrollment = this.generateEnrollment();
     this._examsGrades = [];
     this._worksGrades = [];
   }
@@ -60,7 +61,7 @@ export default class Student extends Person {
     return Math.round(sumGrades / numberOfGrades);
   }
 
-  private static generateEnrollment(): string {
+  generateEnrollment(): string {
     const randomStr = String(Date.now() * (Math.random() + 1)).replace(
       /\W/g,
       ''
