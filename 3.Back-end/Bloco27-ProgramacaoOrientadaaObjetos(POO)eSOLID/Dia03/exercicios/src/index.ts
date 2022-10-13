@@ -1,5 +1,7 @@
 import EvaluationResult from './EvaluationResult';
 import Exam from './Exam';
+import Order from './Order';
+import OrderItem from './OrderItem';
 import Student from './Student';
 import Subject from './Subject';
 import Teacher from './Teacher';
@@ -29,15 +31,27 @@ carolina.addEvaluationResult(new EvaluationResult(workMath, 42));
 carolina.addEvaluationResult(new EvaluationResult(examHistory, 25));
 carolina.addEvaluationResult(new EvaluationResult(workHistory, 50));
 
-console.log('Avaliações: ', carolina.evaluationsResults);
-console.log('Soma das notas: ', carolina.sumGrades());
-console.log('Média das notas: ', carolina.calculateAverage());
-
 lucas.addEvaluationResult(new EvaluationResult(examMath, 25));
 lucas.addEvaluationResult(new EvaluationResult(workMath, 49));
 lucas.addEvaluationResult(new EvaluationResult(examHistory, 20));
 lucas.addEvaluationResult(new EvaluationResult(workHistory, 50));
 
-console.log('Avaliações: ', lucas.evaluationsResults);
-console.log('Soma das notas: ', lucas.sumGrades());
-console.log('Média das notas: ', lucas.calculateAverage());
+const sandwich = new OrderItem('Sanduiche Natural', 5.0);
+const juice = new OrderItem('Suco de Abacaxi', 5.0);
+const dessert = new OrderItem('Gelatina de Uva', 2.5);
+
+const carolinaOrder = new Order(
+  carolina,
+  [sandwich, juice, dessert],
+  'dinheiro',
+  0.1
+);
+const lucasOrder = new Order(lucas, [sandwich, juice], 'dinheiro', 0.1);
+const martaOrder = new Order(marta, [sandwich, juice], 'cartão');
+const joaoOrder = new Order(joao, [sandwich, juice, dessert], 'cartão');
+
+console.log('Pedido da Carolina: ', carolinaOrder);
+console.log('Pedido do Lucas: ', lucasOrder);
+console.log('Pedido da Marta: ', martaOrder);
+console.log('Pedido do João: ', joaoOrder);
+
