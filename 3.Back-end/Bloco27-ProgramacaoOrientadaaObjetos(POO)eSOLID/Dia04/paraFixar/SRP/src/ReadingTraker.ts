@@ -1,10 +1,16 @@
-import progressNotification from './notifications';
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
+import ConsoleNotification from './ConsoleNotification';
+import Notificator from './Notificator';
 
 export default class ReadingTracker {
   private readingGoal: number;
   private booksRead: number;
 
-  constructor(readingGoal: number) {
+  constructor(
+    readingGoal: number,
+    public notificator: Notificator = new ConsoleNotification('console'),
+  ) {
     this.readingGoal = readingGoal;
     this.booksRead = 0;
   }
@@ -12,15 +18,11 @@ export default class ReadingTracker {
   trackReadings(readsCount: number): void {
     this.booksRead += readsCount;
     if (this.booksRead >= this.readingGoal) {
-      progressNotification(
+      this.notificator.sendNotification(
         'Congratulations! You\'ve reached your reading goal!',
       );
       return;
     }
-    progressNotification('There are still some books to go!');
+    this.notificator.sendNotification('There are still some books to go!');
   }
 }
-
-const readTracker = new ReadingTracker(20);
-readTracker.trackReadings(12);
-readTracker.trackReadings(9);
