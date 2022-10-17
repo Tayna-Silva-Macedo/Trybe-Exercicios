@@ -1,11 +1,7 @@
-import IVehicle from './interfaces/IVehicle';
+import ICar from './interfaces/ICar';
 
-export default class Car implements IVehicle {
+export default class Car implements ICar {
   drive(): void {
     console.log('Drive a car');
-  }
-
-  fly(): void {
-    throw new Error(`I don't fly`);
   }
 }
