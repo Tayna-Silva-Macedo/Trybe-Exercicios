@@ -158,9 +158,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 #### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
 - [x] 27-1: Introdução à Orientação a Objetos
 - [x] 27-2: Heranças e Interfaces
-- [ ] 27-3: Polimorfismo
-- [ ] 27-4: SOLID - Introdução e Princípios S, O e D
-- [ ] 27-5: SOLID - Princípios L e I
+- [x] 27-3: Polimorfismo
+- [x] 27-4: SOLID - Introdução e Princípios S, O e D
+- [x] 27-5: SOLID - Princípios L e I
 - [ ] 27-6: Projeto - Trybers and Dragons
 #### Bloco 28: Projeto - TFC - Trybe Futebol Clube
 - [ ] 28-1: Projeto - TFC - Trybe Futebol Clube
