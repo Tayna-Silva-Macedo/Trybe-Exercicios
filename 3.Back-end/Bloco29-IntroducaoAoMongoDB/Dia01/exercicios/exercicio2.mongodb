@@ -1,0 +1,3 @@
+use('aula');
+
+db.bios.find({ _id: 8 }, { name: true });

@@ -1,0 +1,3 @@
+use('aula');
+
+db.books.find({ status: 'MEAP' }, { title: true, authors:true, status: true }).skip(5).limit(10);
