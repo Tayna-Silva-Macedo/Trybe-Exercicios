@@ -161,12 +161,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 27-3: Polimorfismo
 - [x] 27-4: SOLID - Introdução e Princípios S, O e D
 - [x] 27-5: SOLID - Princípios L e I
-- [ ] 27-6: Projeto - Trybers and Dragons
+- [x] 27-6: Projeto - Trybers and Dragons
 #### Bloco 28: Projeto - TFC - Trybe Futebol Clube
-- [ ] 28-1: Projeto - TFC - Trybe Futebol Clube
+- [x] 28-1: Projeto - TFC - Trybe Futebol Clube
 #### Bloco 29: Introdução ao MongoDB
-- [ ] 29-1: Introdução - NoSQL
-- [ ] 29-1: MongoDB - Introdução
+- [x] 29-1: MongoDB - Introdução
 - [ ] 29-2: Filter Operators
 - [ ] 29-3: Operadores de consulta
 - [ ] 29-4: Updates Simples
