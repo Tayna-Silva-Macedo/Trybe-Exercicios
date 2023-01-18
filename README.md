@@ -180,7 +180,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Ciência da Computação :hourglass_flowing_sand:
 #### Bloco 32: Introdução à Python
-- [ ] 32-1: Aprendendo Python
+- [x] 32-1: Aprendendo Python
 - [ ] 32-2: Entrada e Saída de Dados
 - [ ] 32-3: Testes
 - [ ] 32-4: Projeto - Job Insights
