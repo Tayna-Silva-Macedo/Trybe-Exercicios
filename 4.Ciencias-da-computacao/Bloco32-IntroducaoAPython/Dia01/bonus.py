@@ -23,13 +23,33 @@ print_triangle(5)
 
 
 def summation(n):
-    total = 0
-    for number in range(1, n + 1):
-        total += number
-    return total
+    return sum(range(1, n + 1))
 
 
 print(summation(5))
 
 
 # Exercício 4
+
+
+def final_price(liters, fuel_type):
+    if fuel_type == "A":
+        price_per_liter = 1.90
+        discount = 0.03
+        if liters > 20:
+            discount = 0.05
+    elif fuel_type == "G":
+        price_per_liter = 2.50
+        discount = 0.04
+        if liters > 20:
+            discount = 0.06
+
+    total = price_per_liter * liters
+    total_with_discount = total * (1 - discount)
+    return round(total_with_discount, 2)
+
+
+print(final_price(1, "A"))
+print(final_price(1, "G"))
+print(final_price(21, "A"))
+print(final_price(21, "G"))
