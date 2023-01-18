@@ -61,3 +61,26 @@ def paint_costs(area):
 print(paint_costs(250))
 
 # Exercício 6
+
+
+def triangle_type(side_1, side_2, side_3):
+    is_triangle = (
+        side_1 + side_2 > side_3
+        and side_1 + side_3 > side_2
+        and side_2 + side_3 > side_1
+    )
+
+    if not is_triangle:
+        return "não é triângulo"
+    elif side_1 == side_2 == side_3:
+        return "triângulo equilátero"
+    elif side_1 == side_2 or side_1 == side_3 or side_2 == side_3:
+        return "triângulo isósceles"
+    else:
+        return "triângulo escaleno"
+
+
+print(triangle_type(5, 4, 1))
+print(triangle_type(5, 5, 5))
+print(triangle_type(10, 10, 12))
+print(triangle_type(5, 7, 8))
