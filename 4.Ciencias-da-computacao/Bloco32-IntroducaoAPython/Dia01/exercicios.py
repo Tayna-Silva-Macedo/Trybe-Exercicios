@@ -1,3 +1,5 @@
+import math
+
 # Exercício 1
 
 
@@ -43,5 +45,19 @@ print(biggest_name(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]))
 
 
 # Exercício 5
+
+
+def paint_costs(area):
+    unit_price = 80
+    unit_vol = 18
+
+    total_vol = area / 3
+    total_cans = math.ceil(total_vol / unit_vol)
+    total_price = total_cans * unit_price
+
+    return (total_cans, total_price)
+
+
+print(paint_costs(250))
 
 # Exercício 6
