@@ -13,11 +13,23 @@ print(smallest_element([5, 9, 3, 19, 70, 8, 100, 2, 35, 27]))
 
 def print_triangle(n):
     for row in range(1, n + 1):
-        print(row * '*')
+        print(row * "*")
 
 
 print_triangle(5)
 
+
 # Exercício 3
+
+
+def summation(n):
+    total = 0
+    for number in range(1, n + 1):
+        total += number
+    return total
+
+
+print(summation(5))
+
 
 # Exercício 4
