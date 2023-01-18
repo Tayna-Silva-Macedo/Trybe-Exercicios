@@ -106,7 +106,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 #### Bloco 18: Projeto App de Receitas
 - [x] 18-1: App de Receitas
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end :heavy_check_mark:
 #### Bloco 19: Docker: Utilizando Containers
 - [x] 19-1: Introdução - Back-end
 - [x] 19-1: Utilizando Containers - Docker
@@ -170,46 +170,42 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 29-3: Operadores de consulta
 - [x] 29-4: Updates Simples
 - [x] 29-5: Updates Complexos - Arrays
-- [ ] 29-6: Projeto - Commerce
+- [x] 29-6: Projeto - Commerce
 #### Bloco 30: MongoDB com Node.js e POO
-- [ ] 30-1: Mongoose e arquitetura MSC(camada Model)
-- [ ] 30-2: Mongoose e arquitetura MSC(camada Service e Controller)
-- [ ] 30-3: Projeto - Car Shop
+- [x] 30-1: Mongoose e arquitetura MSC(camada Model)
+- [x] 30-2: Mongoose e arquitetura MSC(camada Service e Controller)
+- [x] 30-3: Projeto - Car Shop
 #### Bloco 31: Projeto - App de Delivery
-- [ ] 31-1: Projeto - App de Delivery
-#### Bloco 32: MasterClass - VPS, CI/CD
-- [ ] 31-1: Dia 1 - VPS
-- [ ] 31-2: Dia 2
+- [x] 31-1: Projeto - App de Delivery
 
 ## Ciência da Computação :hourglass_flowing_sand:
-#### Bloco 33: Introdução à Python
-- [ ] 33-1: Introdução - Ciência da Computação
-- [ ] 33-1: Aprendendo Python
-- [ ] 33-2: Entrada e Saída de Dados
-- [ ] 33-3: Testes
-- [ ] 33-4: Projeto - Job Insights
-#### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto
-- [ ] 34-1: Introdução à programação orientada a objetos
-- [ ] 34-2: Herança, Composição e Interfaces
-- [ ] 34-3: Padrões de projeto
-- [ ] 34-4: Projeto - Relatórios de Estoque
-#### Bloco 35: Redes e Raspagem de Dados
-- [ ] 35-1: Arquitetura de redes
-- [ ] 35-2: Redes de computadores, ferramentas e segurança
-- [ ] 35-3: Raspagem de Dados
-- [ ] 35-4: Projeto - Tech news
-#### Bloco 36: Algoritmos
-- [ ] 36-1: Complexidade de Algoritmos
-- [ ] 36-2: Recursividade e Estratégias para solução de problemas
-- [ ] 36-3: Algoritmos de ordenação e busca
-- [ ] 36-4: Projeto - Algoritmos
-#### Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets
-- [ ] 37-1: Arquitetura de Computadores
-- [ ] 37-2: Arrays
-- [ ] 37-3: Hashmap e Dict
-- [ ] 37-4: Set
-- [ ] 37-5: Projeto - Restaurant Orders
-#### Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas
-- [ ] 38-1: Nó e Listas Encadeadas
-- [ ] 38-2: Pilhas e Filas 
-- [ ] 38-3: Projeto - TING - Trybe Is Not Google
+#### Bloco 32: Introdução à Python
+- [ ] 32-1: Aprendendo Python
+- [ ] 32-2: Entrada e Saída de Dados
+- [ ] 32-3: Testes
+- [ ] 32-4: Projeto - Job Insights
+#### Bloco 33: Programação Orientada a Objetos e Padrões de Projeto
+- [ ] 33-1: Introdução à programação orientada a objetos
+- [ ] 33-2: Herança, Composição e Interfaces
+- [ ] 33-3: Padrões de projeto
+- [ ] 33-4: Projeto - Relatórios de Estoque
+#### Bloco 34: Redes e Raspagem de Dados
+- [ ] 34-1: Arquitetura de redes
+- [ ] 34-2: Redes de computadores, ferramentas e segurança
+- [ ] 34-3: Raspagem de Dados
+- [ ] 34-4: Projeto - Tech news
+#### Bloco 35: Algoritmos
+- [ ] 35-1: Complexidade de Algoritmos
+- [ ] 35-2: Recursividade e Estratégias para solução de problemas
+- [ ] 35-3: Algoritmos de ordenação e busca
+- [ ] 35-4: Projeto - Algoritmos
+#### Bloco 36: Estrutura de Dados I: Arrays, Hashmaps e Sets
+- [ ] 36-1: Arquitetura de Computadores
+- [ ] 36-2: Arrays
+- [ ] 36-3: Hashmap e Dict
+- [ ] 36-4: Set
+- [ ] 36-5: Projeto - Restaurant Orders
+#### Bloco 37: Estrutura de Dados II: Listas, Filas e Pilhas
+- [ ] 37-1: Nó e Listas Encadeadas
+- [ ] 37-2: Pilhas e Filas 
+- [ ] 37-3: Projeto - TING - Trybe Is Not Google
