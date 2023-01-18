@@ -1,11 +1,11 @@
 # Exercício 1
 
 
-def higher_number(first_number, second_number):
+def biggest_number(first_number, second_number):
     return max(first_number, second_number)
 
 
-print(higher_number(50, 10))
+print(biggest_number(50, 10))
 
 
 # Exercício 2
@@ -24,6 +24,14 @@ print(average([2, 5, 7, 10, 3]))
 # Exercício 3
 
 # Exercício 4
+
+
+def biggest_name(names_list: list):
+    return max(names_list, key=len)
+
+
+print(biggest_name(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]))
+
 
 # Exercício 5
 
