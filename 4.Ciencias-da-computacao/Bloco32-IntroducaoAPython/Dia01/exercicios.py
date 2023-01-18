@@ -23,6 +23,15 @@ print(average([2, 5, 7, 10, 3]))
 
 # Exercício 3
 
+
+def print_square(n):
+    for row in range(n):
+        print(n * "*")
+
+
+print_square(5)
+
+
 # Exercício 4
 
 
