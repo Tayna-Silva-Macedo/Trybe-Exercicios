@@ -10,6 +10,17 @@ print(higher_number(50, 10))
 
 # Exercício 2
 
+
+def average(numbers_list: list):
+    total = 0
+    length = len(numbers_list)
+    for number in numbers_list:
+        total += number
+    return total / length
+
+
+print(average([2, 5, 7, 10, 3]))
+
 # Exercício 3
 
 # Exercício 4
