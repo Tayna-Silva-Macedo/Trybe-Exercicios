@@ -30,3 +30,23 @@ def sum_natural_numbers():
 
 
 sum_natural_numbers()
+
+
+# Lidando com exceções
+# Exercício 3
+
+
+def file_disapproved_people():
+    disapproved_people = []
+    with open("file.txt") as file_all_people:
+        for line in file_all_people:
+            person = line.split(" ")
+            if int(person[1]) < 6:
+                disapproved_people.append(f"{person[0]}\n")
+
+    with open("disapproved_people.txt", mode="w") as file_disapproved_people:
+        print(disapproved_people)
+        file_disapproved_people.writelines(disapproved_people)
+
+
+file_disapproved_people()
