@@ -10,7 +10,7 @@ def count_books_by_categories(books):
     categories = dict()
     for book in books:
         for category in book["categories"]:
-            if not categories.get(category):
+            if category not in categories:
                 categories[category] = 0
             categories[category] += 1
     return categories
@@ -30,7 +30,7 @@ def write_csv_report(file, header, rows):
 
 
 if __name__ == "__main__":
-    with open("books.json") as file:
+    with open("data/books.json") as file:
         books = retrieve_books(file)
 
     book_count_by_category = count_books_by_categories(books)
@@ -41,5 +41,5 @@ if __name__ == "__main__":
     )
 
     header = ["categoria", "porcentagem"]
-    with open("report.csv", "w") as file:
+    with open("data/report.csv", "w") as file:
         write_csv_report(file, header, books_percentage_rows)
