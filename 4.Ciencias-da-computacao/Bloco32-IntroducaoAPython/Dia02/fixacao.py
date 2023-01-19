@@ -38,15 +38,15 @@ sum_natural_numbers()
 
 def file_disapproved_people():
     disapproved_people = []
-    with open("file.txt") as file_all_people:
-        for line in file_all_people:
+    with open("data/file.txt") as file:
+        for line in file:
             person = line.split(" ")
             if int(person[1]) < 6:
                 disapproved_people.append(f"{person[0]}\n")
 
-    with open("disapproved_people.txt", mode="w") as file_disapproved_people:
+    with open("data/disapproved_people.txt", mode="w") as file:
         print(disapproved_people)
-        file_disapproved_people.writelines(disapproved_people)
+        file.writelines(disapproved_people)
 
 
 file_disapproved_people()

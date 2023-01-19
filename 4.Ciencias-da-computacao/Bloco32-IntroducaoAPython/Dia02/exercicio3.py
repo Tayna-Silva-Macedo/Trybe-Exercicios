@@ -29,7 +29,7 @@ def check_game_result(secret_word, guesses):
 
 
 if __name__ == "__main__":
-    with open("words.txt") as file:
+    with open("data/words.txt") as file:
         words = retrieve_words(file)
     secret_word, scrambled_word = draw_secret_word(words)
     print(f"Scrambled word is {scrambled_word}")
