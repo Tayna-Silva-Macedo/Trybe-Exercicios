@@ -183,11 +183,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 32-1: Aprendendo Python
 - [x] 32-2: Entrada e Saída de Dados
 - [x] 32-3: Testes
-- [ ] 32-4: Projeto - Job Insights
-#### Bloco 33: Programação Orientada a Objetos e Padrões de Projeto
-- [ ] 33-1: Introdução à programação orientada a objetos
-- [ ] 33-2: Herança, Composição e Interfaces
-- [ ] 33-3: Padrões de projeto
+- [x] 32-4: Projeto - Job Insights
+#### Bloco 33: Padrões de Projeto
+- [ ] 33-1: P.O.O em Python
+- [ ] 33-2: Padrões - Iterator, Adapter, Strategy
+- [ ] 33-3: Padrões - Decorator, Observer, Factory
 - [ ] 33-4: Projeto - Relatórios de Estoque
 #### Bloco 34: Redes e Raspagem de Dados
 - [ ] 34-1: Arquitetura de redes
