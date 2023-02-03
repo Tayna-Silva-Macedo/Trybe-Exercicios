@@ -188,11 +188,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 33-1: P.O.O em Python
 - [x] 33-2: Padrões - Iterator, Adapter, Strategy
 - [x] 33-3: Padrões - Decorator, Observer, Factory
-- [ ] 33-4: Projeto - Relatórios de Estoque
-#### Bloco 34: Redes e Raspagem de Dados
-- [ ] 34-1: Arquitetura de redes
-- [ ] 34-2: Redes de computadores, ferramentas e segurança
-- [ ] 34-3: Raspagem de Dados
+- [x] 33-4: Projeto - Relatórios de Estoque
+#### Bloco 34: Raspagem de Dados
+- [x] 34-1: Raspagem de Dados
+- [ ] 34-2: Outras Ferramentas de Raspagem de Dados
+- [ ] 34-3: Dia de Atividades - Crawlers + POO
 - [ ] 34-4: Projeto - Tech news
 #### Bloco 35: Algoritmos
 - [ ] 35-1: Complexidade de Algoritmos
