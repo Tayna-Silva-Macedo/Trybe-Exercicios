@@ -233,3 +233,251 @@ WebDriver BiDi listening on ws://127.0.0.1:36763
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileuFNXT8/search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:36763/devtools/browser/679068b0-1061-4f05-8f23-0088473f5498
 JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 5573 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675706977269	geckodriver	INFO	Listening on 127.0.0.1:40965
+1675706977775	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "53967" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileio5xef"
+*** You are running in headless mode.
+Gtk-Message: 15:09:37.796: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675706978027	Marionette	INFO	Marionette enabled
+1675706978030	Marionette	INFO	Listening on port 36037
+Read port: 36037
+WebDriver BiDi listening on ws://127.0.0.1:53967
+1675706978123	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileio5xef/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53967/devtools/browser/95079840-20d6-44f9-8925-59c53b1ba45c
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 1594 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675707066157	geckodriver	INFO	Listening on 127.0.0.1:58247
+1675707066666	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "53347" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile1Tw2J8"
+*** You are running in headless mode.
+Gtk-Message: 15:11:06.687: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675707066914	Marionette	INFO	Marionette enabled
+1675707066917	Marionette	INFO	Listening on port 42749
+Read port: 42749
+WebDriver BiDi listening on ws://127.0.0.1:53347
+1675707067008	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1Tw2J8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53347/devtools/browser/48c09912-56a7-4424-81f7-e04b3b73efa4
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 4841 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675707237665	geckodriver	INFO	Listening on 127.0.0.1:54921
+1675707238151	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "57397" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilek9U2uQ"
+*** You are running in headless mode.
+Gtk-Message: 15:13:58.172: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675707238417	Marionette	INFO	Marionette enabled
+1675707238420	Marionette	INFO	Listening on port 43555
+Read port: 43555
+WebDriver BiDi listening on ws://127.0.0.1:57397
+1675707238521	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilek9U2uQ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57397/devtools/browser/6ab3a897-a76b-4a34-baec-d68665e16ffc
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 2830 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675707543092	geckodriver	INFO	Listening on 127.0.0.1:55239
+1675707543575	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "46965" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileaPDXSL"
+*** You are running in headless mode.
+Gtk-Message: 15:19:03.597: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675707543843	Marionette	INFO	Marionette enabled
+1675707543848	Marionette	INFO	Listening on port 42059
+Read port: 42059
+WebDriver BiDi listening on ws://127.0.0.1:46965
+1675707543949	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaPDXSL/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:46965/devtools/browser/f7e9648f-3730-4523-9a48-9f8ba4ed72e5
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 3241 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675707553822	geckodriver	INFO	Listening on 127.0.0.1:48241
+1675707554303	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "44953" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilelDPMhP"
+*** You are running in headless mode.
+Gtk-Message: 15:19:14.324: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675707554562	Marionette	INFO	Marionette enabled
+1675707554566	Marionette	INFO	Listening on port 46131
+Read port: 46131
+WebDriver BiDi listening on ws://127.0.0.1:44953
+1675707554661	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelDPMhP/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:44953/devtools/browser/b2750fdc-b9f0-451f-bada-d60c18f269e6
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 887 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675707596465	geckodriver	INFO	Listening on 127.0.0.1:50915
+1675707596951	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "35031" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilevodHeO"
+*** You are running in headless mode.
+Gtk-Message: 15:19:56.972: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675707597207	Marionette	INFO	Marionette enabled
+1675707597210	Marionette	INFO	Listening on port 45487
+Read port: 45487
+WebDriver BiDi listening on ws://127.0.0.1:35031
+1675707597306	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevodHeO/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:35031/devtools/browser/f566a080-8b18-4ab6-9841-3bdbe02c2c1c
+1675707602201	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 2980 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675707902145	geckodriver	INFO	Listening on 127.0.0.1:53249
+1675707902595	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "36529" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezywC6W"
+*** You are running in headless mode.
+Gtk-Message: 15:25:02.618: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675707902880	Marionette	INFO	Marionette enabled
+1675707902885	Marionette	INFO	Listening on port 33131
+Read port: 33131
+WebDriver BiDi listening on ws://127.0.0.1:36529
+1675707902991	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezywC6W/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:36529/devtools/browser/3bfcdaac-140a-4a1c-b6c2-c5da20ede1a7
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 449 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675707941276	geckodriver	INFO	Listening on 127.0.0.1:54387
+1675707941787	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "47797" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezAOY2r"
+*** You are running in headless mode.
+Gtk-Message: 15:25:41.808: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675707942069	Marionette	INFO	Marionette enabled
+1675707942072	Marionette	INFO	Listening on port 33547
+Read port: 33547
+WebDriver BiDi listening on ws://127.0.0.1:47797
+1675707942165	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezAOY2r/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:47797/devtools/browser/7f4151e4-5e99-4790-80ac-4f7cbb6f225a
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 7128 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675707964115	geckodriver	INFO	Listening on 127.0.0.1:38385
+1675707964602	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "47895" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilejNkAbn"
+*** You are running in headless mode.
+Gtk-Message: 15:26:04.637: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675707964900	Marionette	INFO	Marionette enabled
+1675707964903	Marionette	INFO	Listening on port 44899
+Read port: 44899
+WebDriver BiDi listening on ws://127.0.0.1:47895
+1675707965015	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejNkAbn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:47895/devtools/browser/adeb5a05-3764-41a6-9cc5-561160ae71a7
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 6457 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675708376768	geckodriver	INFO	Listening on 127.0.0.1:36903
+1675708377250	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "55789" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileShmtR6"
+*** You are running in headless mode.
+Gtk-Message: 15:32:57.275: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675708377564	Marionette	INFO	Marionette enabled
+1675708377568	Marionette	INFO	Listening on port 33215
+WebDriver BiDi listening on ws://127.0.0.1:55789
+Read port: 33215
+1675708377804	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileShmtR6/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55789/devtools/browser/0fac2015-242e-4bae-aa32-7974a8c860dc
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 6608 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675708557145	geckodriver	INFO	Listening on 127.0.0.1:57441
+1675708557626	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "47705" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiled8RBuZ"
+*** You are running in headless mode.
+Gtk-Message: 15:35:57.650: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675708557902	Marionette	INFO	Marionette enabled
+1675708557908	Marionette	INFO	Listening on port 35977
+Read port: 35977
+WebDriver BiDi listening on ws://127.0.0.1:47705
+1675708558016	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiled8RBuZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:47705/devtools/browser/4fdd4ba5-149b-440a-b15b-575166bf9e78
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 5392 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675708730228	geckodriver	INFO	Listening on 127.0.0.1:34403
+1675708730691	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "42549" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileSwqPQi"
+*** You are running in headless mode.
+Gtk-Message: 15:38:50.713: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675708730963	Marionette	INFO	Marionette enabled
+1675708730966	Marionette	INFO	Listening on port 32831
+Read port: 32831
+WebDriver BiDi listening on ws://127.0.0.1:42549
+1675708731074	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSwqPQi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:42549/devtools/browser/4e5c8ae4-9bf1-4205-9905-14078962db62
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 606 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675708771141	geckodriver	INFO	Listening on 127.0.0.1:47523
+1675708771611	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "33841" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilejbetYE"
+*** You are running in headless mode.
+Gtk-Message: 15:39:31.635: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675708771970	Marionette	INFO	Marionette enabled
+1675708771975	Marionette	INFO	Listening on port 40685
+Read port: 40685
+WebDriver BiDi listening on ws://127.0.0.1:33841
+1675708772128	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejbetYE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:33841/devtools/browser/8d5b9951-de40-4ec3-bcbc-6b04259892f2
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 1620 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675708804458	geckodriver	INFO	Listening on 127.0.0.1:37487
+1675708804950	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "41121" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileHNQker"
+*** You are running in headless mode.
+Gtk-Message: 15:40:04.973: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675708805217	Marionette	INFO	Marionette enabled
+1675708805221	Marionette	INFO	Listening on port 42971
+Read port: 42971
+WebDriver BiDi listening on ws://127.0.0.1:41121
+1675708805322	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHNQker/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:41121/devtools/browser/32879e7c-82e8-4e50-a26e-fbf553007205
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 5063 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675708840465	geckodriver	INFO	Listening on 127.0.0.1:38651
+1675708840930	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "37923" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile3nxonN"
+*** You are running in headless mode.
+Gtk-Message: 15:40:40.953: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675708841218	Marionette	INFO	Marionette enabled
+1675708841222	Marionette	INFO	Listening on port 37883
+Read port: 37883
+WebDriver BiDi listening on ws://127.0.0.1:37923
+1675708841324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3nxonN/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:37923/devtools/browser/6c62c8fd-70bf-4eed-ab06-fd5c4ecf6299
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 5598 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675709092006	geckodriver	INFO	Listening on 127.0.0.1:51605
+1675709092467	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "51123" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXmCUFM"
+*** You are running in headless mode.
+Gtk-Message: 15:44:52.494: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675709092793	Marionette	INFO	Marionette enabled
+1675709092797	Marionette	INFO	Listening on port 33035
+WebDriver BiDi listening on ws://127.0.0.1:51123
+Read port: 33035
+1675709092920	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXmCUFM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51123/devtools/browser/56d9e923-d67f-4f41-b7e4-b8c23dee2b03
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 789 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675709147952	geckodriver	INFO	Listening on 127.0.0.1:39183
+1675709148423	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "59715" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileyO5yI3"
+*** You are running in headless mode.
+Gtk-Message: 15:45:48.449: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675709148741	Marionette	INFO	Marionette enabled
+1675709148746	Marionette	INFO	Listening on port 45843
+Read port: 45843
+WebDriver BiDi listening on ws://127.0.0.1:59715
+1675709148917	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyO5yI3/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59715/devtools/browser/1dcf4ead-2f38-4804-93d3-56b485d8cbb0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 3008 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675709459357	geckodriver	INFO	Listening on 127.0.0.1:56257
+1675709459766	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "43043" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilevgwRQa"
+*** You are running in headless mode.
+Gtk-Message: 15:50:59.793: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675709460119	Marionette	INFO	Marionette enabled
+1675709460125	Marionette	INFO	Listening on port 34209
+Read port: 34209
+WebDriver BiDi listening on ws://127.0.0.1:43043
+1675709460247	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevgwRQa/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:43043/devtools/browser/9f64a3f0-4d04-4869-83aa-558ccb88b235
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 3479 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1675709827078	geckodriver	INFO	Listening on 127.0.0.1:34287
+1675709827491	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "40167" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2OPXzt"
+*** You are running in headless mode.
+Gtk-Message: 15:57:07.518: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+1675709827904	Marionette	INFO	Marionette enabled
+1675709827909	Marionette	INFO	Listening on port 39421
+Read port: 39421
+WebDriver BiDi listening on ws://127.0.0.1:40167
+1675709828086	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2OPXzt/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:40167/devtools/browser/35564f89-2399-4614-ae97-25d904cd5412
+JavaScript warning: https://pagead2.googlesyndication.com/bg/1ltCRSOx5k-1I0D0UILHPXNozEC50ZuHf8HEjBLxTFM.js line 2 > eval line 1945 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
