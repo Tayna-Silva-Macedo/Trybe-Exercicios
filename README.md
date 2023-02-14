@@ -196,7 +196,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 34-4: Projeto - Tech news
 #### Bloco 35: Algoritmos
 - [x] 35-1: Complexidade de Algoritmos
-- [ ] 35-2: Recursividade e Estratégias para solução de problemas
+- [x] 35-2: Recursividade e Estratégias para solução de problemas
 - [ ] 35-3: Algoritmos de ordenação e busca
 - [ ] 35-4: Projeto - Algoritmos
 #### Bloco 36: Estrutura de Dados I: Arrays, Hashmaps e Sets
