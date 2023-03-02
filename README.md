@@ -202,7 +202,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 #### Bloco 36: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
 - [x] 36-1: Arquitetura de Computadores
 - [x] 36-2: Arquitetura de Redes
-- [ ] 36-3: Arrays
+- [x] 36-3: Arrays
 - [ ] 36-4: Nó e Listas Encadeadas
 - [ ] 36-5: Pilhas e Filas
 - [ ] 36-6: Projeto - TING - Trybe Is Not Google
