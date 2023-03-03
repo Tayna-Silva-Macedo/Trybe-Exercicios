@@ -22,7 +22,7 @@ class LinkedList:
         last_value = Node(value)
         current_value = self.head_value
 
-        if current_value is None:
+        if self.is_empty():
             return self.insert_first(value)
 
         while current_value.next:
@@ -88,7 +88,7 @@ class LinkedList:
             position -= 1
 
         value_to_be_removed = previous_to_be_removed.next
-        previous_to_be_removed.next = value_to_be_removed.next_value
+        previous_to_be_removed.next = value_to_be_removed.next
         value_to_be_removed.next = None
         self.__length -= 1
 
