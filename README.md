@@ -205,7 +205,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 36-3: Arrays
 - [x] 36-4: Nó e Listas Encadeadas
 - [x] 36-5: Pilhas e Filas
-- [ ] 36-6: Projeto - TING - Trybe Is Not Google
+- [x] 36-6: Projeto - TING - Trybe Is Not Google
 #### Bloco 37: Estrutura de Dados II: Listas, Filas e Pilhas
 - [ ] 37-1: Nó e Listas Encadeadas
 - [ ] 37-2: Pilhas e Filas 
