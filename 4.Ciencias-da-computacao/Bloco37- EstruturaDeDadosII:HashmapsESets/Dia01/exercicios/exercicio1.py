@@ -20,8 +20,8 @@ def count_words(words, chars):
             else:
                 str_count[char] += 1
 
-            if str_count[char] > alphabet[char]:
-                break
+                if str_count[char] > alphabet[char]:
+                    break
 
         else:
             ans += len(word)
