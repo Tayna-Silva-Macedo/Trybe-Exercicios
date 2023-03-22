@@ -178,7 +178,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 #### Bloco 31: Projeto - App de Delivery
 - [x] 31-1: Projeto - App de Delivery
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação :heavy_check_mark:
 #### Bloco 32: Introdução à Python
 - [x] 32-1: Aprendendo Python
 - [x] 32-2: Entrada e Saída de Dados
@@ -209,4 +209,4 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 #### Bloco 37: Estrutura de Dados II: Hashmaps e Sets
 - [x] 37-1: Hashmap e Dict
 - [x] 37-2: Set
-- [ ] 37-3: Projeto - Restaurant Orders
+- [x] 37-3: Projeto - Restaurant Orders
